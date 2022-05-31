@@ -1,4 +1,42 @@
+ <div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-white rounded p-3 shadow">
+        <h3>Add your task</h3>
+        <%= simple_form_for @task do |task| %>
+          <%= task.input :name %>
+          <%= task.input :frequence %>
+          <%= task.input :category %>
+          <input list="category" name="category">
+<datalist id="category">
+<option value="Sport">
+<option value="Health">
+<option value="Business">
+<option value="Hobby">
+</datalist>
+          <%= task.submit class: 'btn btn-secondary' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+  <div>
+    <h3>All tasks</h3>
+      <% @tasks.each do |task| %>
+        <%= task.name%>
+        <%= task.frequence%>
+        <%= task.category%>
+        <% end %>
+  </div>
+<div>
+<label for="ice-cream-choice">Choose a flavor:</label>
+<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
 
-<%  @tasks.each do |task|%>
-  <%=task.name%>
-<% end %>
+<datalist id="ice-cream-flavors">
+    <option value="Chocolate">
+    <option value="Coconut">
+    <option value="Mint">
+    <option value="Strawberry">
+    <option value="Vanilla">
+</datalist>
+</div>
