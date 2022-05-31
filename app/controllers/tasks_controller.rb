@@ -4,6 +4,7 @@ class TasksController < ApplicationController
     @tasks = Task.all
     @task = Task.new
     @user = current_user
+
   end
 
   def create
