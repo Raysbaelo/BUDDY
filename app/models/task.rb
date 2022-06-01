@@ -3,4 +3,5 @@ class Task < ApplicationRecord
   has_many :occurances
   validates :name, presence: true
   validates :category, presence: true
+  validates :frequence, presence: true
 end

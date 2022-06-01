@@ -5,15 +5,8 @@
         <h3>Add your task</h3>
         <%= simple_form_for @task do |task| %>
           <%= task.input :name %>
-          <%= task.input :frequence %>
-          <%= task.input :category %>
-          <input list="category" name="category">
-<datalist id="category">
-<option value="Sport">
-<option value="Health">
-<option value="Business">
-<option value="Hobby">
-</datalist>
+          <%= task.input :frequence, collection: ["Daily"," Weekly", "Monthly", "Yearly"] %>
+          <%= task.input :category, collection: ["Sport", "Health", "Business", "Hobby"]%>
           <%= task.submit class: 'btn btn-secondary' %>
         <% end %>
       </div>
@@ -29,14 +22,3 @@
         <% end %>
   </div>
 <div>
-<label for="ice-cream-choice">Choose a flavor:</label>
-<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
-
-<datalist id="ice-cream-flavors">
-    <option value="Chocolate">
-    <option value="Coconut">
-    <option value="Mint">
-    <option value="Strawberry">
-    <option value="Vanilla">
-</datalist>
-</div>
