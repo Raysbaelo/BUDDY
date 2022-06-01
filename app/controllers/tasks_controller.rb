@@ -1,5 +1,7 @@
 class TasksController < ApplicationController
 
+  before_action :set_task, only: [:show, :edit, :update, :destroy];
+
   def index
     @tasks = Task.all
     @task = Task.new
@@ -8,6 +10,9 @@ class TasksController < ApplicationController
 
   def new
     @task = Task.new
+  end
+
+  def edit
   end
 
   def create
@@ -22,7 +27,17 @@ class TasksController < ApplicationController
     end
   end
 
+  def destroy
+    @task = Task.find(params[:id])
+    @task.destroy
+    redirect_to tasks_url, notice: 'Task successfully removed'
+  end
+
   private
+
+  def set_task
+    @task = Task.find(params[:id])
+  end
 
   def task_params
     params.require(:task).permit(:name, :category, :frequence)
