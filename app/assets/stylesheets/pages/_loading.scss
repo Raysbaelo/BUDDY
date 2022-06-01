@@ -3,8 +3,14 @@ body {
   max-height: 896px;
   max-width: 375px;
   background-image: url(images/NakedLoutreHi.gif);
-  padding: 0 !important;
+  padding-right: 0 !important;
   margin: 0% !important;
+}
+
+a {
+  margin-top: 50px;
+  color: #FF4D58;
+  background-color: white !important;
 }
 
 
@@ -13,8 +19,56 @@ body {
   text-align: center;
 }
 
+
 .superloutre {
-  align-self: center;
-  justify-self: center;
-  z-index: 2;
+  position: relative;
+  top: 8px;
+  right: 42px;
+  width: 243px;
+}
+
+.superloutre {
+  animation-name: bobbingAnim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  -webkit-animation-name: bobbingAnim;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+}
+
+
+@keyframes bobbingAnim {
+  0% {
+    transform: translate(0px, 0px);
+    animation-timing-function: ease-in-out
+  }
+
+  50% {
+    transform: translate(0px, 15px);
+    animation-timing-function: ease-in-out
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    animation-timing-function: ease-in-out
+  }
+}
+
+@-webkit-keyframes bobbingAnim {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -webkit-animation-timing-function: ease-in-out
+  }
+
+  50% {
+    -webkit-transform: translate(0px, 12px);
+    -webkit-animation-timing-function: ease-in-out
+  }
+
+  100% {
+    -webkit-transform: translate(0px, 0px);
+    -webkit-animation-timing-function: ease-in-out
+  }
 }
