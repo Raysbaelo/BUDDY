@@ -5,8 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :tasks, dependent: :destroy
 
-  validates :password, presence: true
-  validates :password_confirmation, presence: true
   validates :category_health, presence: true
   validates :category_sport, presence: true
   validates :category_business, presence: true
