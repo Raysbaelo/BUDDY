@@ -7,4 +7,8 @@ class PagesController < ApplicationController
 
   def loading
   end
+
+  def graph
+
+  end
 end
