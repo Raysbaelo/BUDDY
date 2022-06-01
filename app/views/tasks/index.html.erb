@@ -1,12 +1,16 @@
  <div>
     <h3>All tasks</h3>
       <% @tasks.each do |task| %>
-        <%= task.name%>
-        <%= task.frequence%>
-        <%= task.category%>
+      <hr>
+        <p>👻-<%= task.name%></p>
+        <p>👉<%= task.frequence%></p>
+        <p>👉<%= task.category%></p>
+        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
         <% end %>
   </div>
 <div>
+
 
 <div class="topnavbar">
   <div class="left col-4">
@@ -26,3 +30,4 @@
       </ul>
     </div>
 </div>
+
