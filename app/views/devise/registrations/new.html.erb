@@ -4,6 +4,9 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <%= f.input :nickname,
+                required: true,
+                input_html: { autocomplete: "nickname" } %>
     <%= f.input :email,
                 required: true,
                 autofocus: true,
@@ -15,10 +18,22 @@
     <%= f.input :password_confirmation,
                 required: true,
                 input_html: { autocomplete: "new-password" } %>
+    <%= f.input :category_sport,
+                required: true,
+                input_html: { autocomplete: "category sport", min: '0', max: '2' } %>
+    <%= f.input :category_business,
+                required: true,
+                input_html: { autocomplete: "category business", min: '0', max: '2' } %>
+    <%= f.input :category_hobby,
+                required: true,
+                input_html: { autocomplete: "category hobby", min: '0', max: '2' } %>
+    <%= f.input :category_health,
+                required: true,
+                input_html: { autocomplete: "category health", min: '0', max: '2' } %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "Sign up"  %>
   </div>
 <% end %>
 
