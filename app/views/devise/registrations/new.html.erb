@@ -19,18 +19,26 @@
       <%= f.input :password_confirmation,
                   required: true,
                   input_html: { autocomplete: "new-password" } %>
-      <%= f.input :category_sport, # mettre les bonnes targets
+    <div  data-parent-target="sportInput">
+      <%= f.input :category_sport,
                   required: true,
                   input_html: { autocomplete: "category sport", min: '0', max: '2' } %>
+    </div>
+    <div data-parent-target="businessInput">
       <%= f.input :category_business,
-                  required: true, # mettre les bonnes targets
+                  required: true,
                   input_html: { autocomplete: "category business", min: '0', max: '2' } %>
-      <%= f.input :category_hobby, # mettre les bonnes targets
+    </div>
+    <div data-parent-target="hobbyInput">
+      <%= f.input :category_hobby,
                   required: true,
                   input_html: { autocomplete: "category hobby", min: '0', max: '2' } %>
-      <%= f.input :category_health, # mettre les bonnes targets
+    </div>
+    <div data-parent-target="healthInput">
+      <%= f.input :category_health,
                   required: true,
                   input_html: { autocomplete: "category health", min: '0', max: '2' } %>
+    </div>
     </div>
 
     <div class="form-actions">
@@ -55,7 +63,3 @@
   <% end %>
 
 </div>
-
-
-
-
