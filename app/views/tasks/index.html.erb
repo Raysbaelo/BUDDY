@@ -6,7 +6,7 @@
         <p>👉<%= task.frequence%></p>
         <p>👉<%= task.category%></p>
         <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-
+        <td><%= link_to 'Edit', edit_task_path(task) %></td>
         <% end %>
   </div>
 <div>

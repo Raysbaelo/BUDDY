@@ -1,6 +1,5 @@
 class TasksController < ApplicationController
-
-  before_action :set_task, only: [:show, :edit, :update, :destroy];
+  before_action :set_task, only: [:edit, :update, :destroy, :show];
 
   def index
     @tasks = Task.all
@@ -8,8 +7,18 @@ class TasksController < ApplicationController
     @user = current_user
   end
 
+  def show
+    @task = Task.new
+  end
+
   def new
     @task = Task.new
+  end
+
+  def update
+    @task.update(task_params)
+      redirect_to tasks_path, notice: 'Garden was successfully updated.'
+
   end
 
   def edit

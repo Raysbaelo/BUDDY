@@ -7,7 +7,7 @@
           <%= task.input :name %>
           <%= task.input :frequence, collection: ["Daily"," Weekly", "Monthly", "Yearly"] %>
           <%= task.input :category, collection: ["Sport", "Health", "Business", "Hobby"]%>
-          <%= task.submit class: 'btn btn-secondary' %>
+          <%= task.submit class: 'btn btn-warning' %>
           <%= link_to 'Back', tasks_path %>
         <% end %>
       </div>
