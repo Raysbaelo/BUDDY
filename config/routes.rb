@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#loading'
+  get "graph", to: 'pages#graph'
   # match "user_root" => 'superpowers#landing'
 
   resources :buddies, only: [:show]
