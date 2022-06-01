@@ -5,8 +5,8 @@
         <h3>Add your task</h3>
         <%= simple_form_for @task do |task| %>
           <%= task.input :name %>
-          <%= task.input :frequence %>
-          <%= task.input :category %>
+          <%= task.input :frequence, collection: ["Daily"," Weekly", "Monthly", "Yearly"] %>
+          <%= task.input :category, collection: ["Sport", "Health", "Business", "Hobby"]%>
           <%= task.submit class: 'btn btn-secondary' %>
         <% end %>
       </div>
