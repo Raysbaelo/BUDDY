@@ -24,7 +24,9 @@ class GenerateTasks
 
   def create_tasks(category, frequency, number)
     ap "je dois créer #{number} taches pour la catégorie #{category} avec une frequence de #{frequency}"
-    ap AVAILABLE_TASKS[category].first(number)
-    ap @user
+    default_tasks = AVAILABLE_TASKS[category].first(number)
+    ap default_tasks.join("','")
+
+
   end
 end
