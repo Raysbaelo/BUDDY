@@ -11,4 +11,8 @@ class PagesController < ApplicationController
   def graph
 
   end
+
+  def calender
+
+  end
 end
