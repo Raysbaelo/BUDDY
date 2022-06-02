@@ -1,0 +1,17 @@
+.topnavbar li{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.topnavbar a{
+  border-radius: 10%;
+ display: inline-block;
+ padding-right: 1px;
+}
+
+.topnavbar img{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  padding-bottom: 2px;
+}
