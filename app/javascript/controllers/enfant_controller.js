@@ -18,8 +18,7 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log('Hello from enfant_controller.js')
-    fetch(this.categoryValue)
-    console.log(this.categoryValue)
+    // console.log('Hello from enfant_controller.js')
+    // console.log(this.categoryValue)
   }
 }
