@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     current_user.update!(user_params)
     ap "je usis la"
     GenerateTasks.new.call(current_user)
+    redirect_to root_path
   end
 
   private

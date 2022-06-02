@@ -6,18 +6,8 @@ class User < ApplicationRecord
   has_many :tasks, dependent: :destroy
 
 
-  validates :category_health, presence: true, numericality: {less_than_or_equal_to: 2}
-  validates :category_sport, presence: true, numericality: { less_than_or_equal_to: 2}
-  validates :category_business, presence: true, numericality: { less_than_or_equal_to: 2 }
-  validates :category_hobby, presence: true, numericality: { less_than_or_equal_to: 2}
-
-
-  after_create :generate_tasks
-
-  private
-
-  def generate_tasks
-    GenerateTasks.new.call(self)
-  end
-
+  # validates :category_health, numericality: {less_than_or_equal_to: 2}
+  # validates :category_sport, numericality: { less_than_or_equal_to: 2}
+  # validates :category_business, numericality: { less_than_or_equal_to: 2 }
+  # validates :category_hobby, numericality: { less_than_or_equal_to: 2}
 end
