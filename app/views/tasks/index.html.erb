@@ -1,14 +1,14 @@
- <div>
-    <h3>All tasks</h3>
+    <div class=div>
       <% @tasks.each do |task| %>
-      <hr>
-        <p>👻-<%= task.name%></p>
-        <p>👉<%= task.frequence%></p>
-        <p>👉<%= task.category%></p>
-        <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-
+      <div class="tasks">
+        <p><%= task.name%></p>
+         <td><%= link_to task, method: :delete do %>
+         <%= image_tag("poubelle.png") %>
+         <% end %>
+        </td>
+      </div>
         <% end %>
-  </div>
+</div>
   <div class="topnavbar">
    <div class="left col-4">
      <ul class="text">

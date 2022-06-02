@@ -1,25 +1,31 @@
+.topnavbar{
+  border: solid 3px #E9C46A;
+  width: 413px;
+  height: 70px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+}
+
 .topnavbar li{
 
   display: inline-block;
   text-decoration: none;
   width: 71px;
-  height: 40px;
+  height: 20px;
   padding-top: 30px;
   padding-bottom: 50px;
 }
-
-.topnavbar a{
-  border-radius: 10%;
- padding-right: 1px;
- width: 10px;
- height: 10px;
+a{
+  border-radius: 50%;
 }
 
 .topnavbar img{
-  width: 14px;
-  height: 14px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   padding-bottom: 2px;
+  background-color: #2A9D8F ;
 }
 
 .topnavbar .text{
