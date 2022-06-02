@@ -3,7 +3,28 @@ import { Controller } from 'stimulus'
 
 export default class extends Controller {
   // static targets = [ 'test' ] // mettre les bon input
-  static targets = [ "sportInput", "businessInput", "hobbyInput", "healthInput" ]
+  static targets = [ "question", "form", "sportInput", "businessInput", "hobbyInput", "healthInput" ]
+
+  loadDefaultCategories() {
+    this.categories = {
+      "business": {
+        counter: 0,
+        input: this.businessInputTarget
+      },
+      "sport": {
+        counter: 0,
+        input: this.sportInputTarget
+      },
+      "hobby": {
+        counter: 0,
+        input: this.hobbyInputTarget
+      },
+      "health": {
+        counter: 0,
+        input: this.healthInputTarget
+      }
+    }
+  }
 
   addCategory(event) {
     const category = event.detail;
@@ -14,66 +35,38 @@ export default class extends Controller {
   }
 
   updateInputs() {
+    Object.entries(this.categories).forEach(([key, category]) => {
+      category.input.value = category.counter
+    })
+  }
 
-    Object.entries(this.categories).forEach(([key, value]) => {
+  submitForm() {
+    console.log('submit form')
+    this.formTarget.submit()
+  }
 
-      let target;
-
-      switch(key) {
-        case 'business':
-          target = this.businessInputTarget
-        break;
-
-        case 'sport':
-          target = this.sportInputTarget
-        break;
-
-        case 'health':
-          target = this.healthInputTarget
-        break;
-
-        case 'hobby':
-          target = this.hobbyInputTarget
-        break;
-
-        default:
-          console.log(`Sorry, we are out of ${key}.`);
-      }
-      console.log(target)
-
-      input = target.querySelector("input");
-
-
-    });
-    // each à faire sur this.categories
-    // mettre la value de l'input à jour en fonction du counter
+  nextQuestion() {
+    const nextChild = this.currentChild.nextElementSibling
+    this.currentChild.classList.add('d-none')
+    nextChild.classList.remove('d-none')
+    this.currentChild = nextChild
   }
 
   next() {
-    console.log('je passe à la suivante')
+    if (this.currentChild.nextElementSibling === null) {
+      this.submitForm()
+    } else {
+      this.nextQuestion()
+    }
+  }
+
+  showFirstChild() {
+    this.currentChild = this.questionTargets[0]
+    this.currentChild.classList.remove('d-none')
   }
 
   connect() {
-    this.categories = {
-      "business": {
-        counter: 0,
-        element: this.businessInputTarget
-      },
-      "sport": {
-        counter: 0,
-        element: this.sportInputTarget
-      },
-
-      "hobby": {
-        counter: 0,
-        element: this.hobbyInputTarget
-      },
-
-      "health": {
-        counter: 0,
-        element: this.healthInputTarget
-      }
-    }
-    console.log('Hello from parent_controller.js')
+    this.loadDefaultCategories()
+    this.showFirstChild()
   }
 }

@@ -2,7 +2,6 @@ body {
   background-color: #FF4D58;
   max-height: 896px;
   max-width: 375px;
-  background-image: asset-url('NakedLoutreHi.gif');
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -13,6 +12,32 @@ a {
   background-color: white !important;
 }
 
+.container {
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.cloudbuddy {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(cloudbuddy.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.superloutre {
+  transform: translate(0, 20px);
+  width: 243px;
+}
+
 
 .relative {
   width: fit-content;
@@ -20,12 +45,6 @@ a {
 }
 
 
-.superloutre {
-  position: relative;
-  top: 8px;
-  right: 79px;
-  width: 243px;
-}
 
 .superloutre {
   animation-name: bobbingAnim;
@@ -41,17 +60,17 @@ a {
 
 @keyframes bobbingAnim {
   0% {
-    transform: translate(0px, 0px);
+    transform: translate(0px, -30px);
     animation-timing-function: ease-in-out
   }
 
   50% {
-    transform: translate(0px, 15px);
+    transform: translate(0px, -15px);
     animation-timing-function: ease-in-out
   }
 
   100% {
-    transform: translate(0px, 0px);
+    transform: translate(0px, -30px);
     animation-timing-function: ease-in-out
   }
 }
