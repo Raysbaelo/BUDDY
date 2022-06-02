@@ -1,0 +1,43 @@
+<h1>Users#edit_profile</h1>
+
+<div data-controller="parent">
+
+  <%= simple_form_for(current_user, url: update_profile_path, html: {data: {'parent-target': 'form'}}) do |f| %>
+    <%= f.error_notification %>
+
+    <div class="d-noneeeee">
+      <%= f.input :category_sport,
+                  required: true,
+                  input_html: { autocomplete: "category sport", min: '0', max: '2',  data: {'parent-target': "sportInput"} } %>
+
+      <%= f.input :category_business,
+                  required: true,
+                  input_html: { autocomplete: "category business", min: '0', max: '2',  data: {'parent-target': "businessInput"} } %>
+
+      <%= f.input :category_hobby,
+                  required: true,
+                input_html: { autocomplete: "category hobby", min: '0', max: '2', data: {'parent-target': "hobbyInput"} } %>
+
+      <%= f.input :category_health,
+                  required: true,
+                  input_html: { autocomplete: "category health", min: '0', max: '2',  data: {'parent-target': "healthInput"} } %>
+    </div>
+  <% end %>
+
+  <hr>
+
+  <div class="questions">
+    <% YAML.load_file('data/questions.yml').each do |question| %>
+      <div class="d-none" data-parent-target="question" data-controller="enfant" data-enfant-category-value="<%= question["category"] %>" data-action="yes->parent#addCategory no->parent#next">
+        <div class="options" data-enfant-target="option">
+          <%= question["name"] %> - <%= question["category"] %>
+
+          <span data-action="click->enfant#yes">Oui</span>
+          -
+          <span data-action="click->enfant#no">Non</span>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
