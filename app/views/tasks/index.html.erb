@@ -1,33 +1,12 @@
  <div>
-    <h3>All tasks</h3>
-      <% @tasks.each do |task| %>
+    <h3>Your default tasks</h3>
+      <%  @tasks.each do |task| %>
       <hr>
         <p>👻-<%= task.name%></p>
-        <p>👉<%= task.frequence%></p>
-        <p>👉<%= task.category%></p>
+        <p>👉-<%= task.frequence%></p>
+        <p>👉-<%= task.category%></p>
         <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
         <% end %>
   </div>
 <div>
-
-
-<div class="topnavbar">
-  <div class="left col-4">
-     <ul class="text_left">
-       <li><a href=<%= tasks_path %>>Home</a></li>
-       <li><a href=<%= new_task_path %>>+</a></li>
-       <li><a href=<%= buddy_path@user %>>Buddy</a></li>
-       <li><a href=<%= graph_path %>>Graph</a></li>
-      </ul>
-    </div>
-    <div class="right col-4">
-      <ul>
-        <% if user_signed_in? %>
-          <li class="logout" style="margin-top: 25px;"><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
-        <% else %>
-          <li><a href="<%= new_user_session_path %>">Login</a></li>
-         <% end %>
-      </ul>
-    </div>
-</div>

@@ -1,8 +1,3 @@
-# ates :category_health, presence: true
-#   validates :category_sport, presence: true
-#   validates :category_business, presence: true
-#   validates :category_hobby, presence: true
-
 class GenerateTasks
   DATA = {
     'category_sport' => :weekly,
@@ -15,18 +10,22 @@ class GenerateTasks
 
   def call(user)
     @user = user
-    DATA.each do |category, frequency|
+    DATA.each do |category, frequence|
       score = user.send(category)
       number = 3 - score
-      create_tasks(category.gsub('category_', ''), frequency, number)
+      create_tasks(category.gsub('category_', ''), frequence, number)
     end
   end
 
-  def create_tasks(category, frequency, number)
-    ap "je dois créer #{number} taches pour la catégorie #{category} avec une frequence de #{frequency}"
-    default_tasks = AVAILABLE_TASKS[category].first(number)
-    ap default_tasks.join("','")
-
-
+  def create_tasks(category, frequence, number)
+    @default_tasks = AVAILABLE_TASKS[category].first(number)
+    @default_tasks.each do |task_data|
+      Task.create!(
+        name: task_data,
+        category: category,
+        frequence: frequence,
+        user: @user
+      )
+    end
   end
 end
