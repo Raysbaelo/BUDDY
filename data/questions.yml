@@ -1,8 +1,16 @@
 - name: Question 1
-  category: business
+  category: health
 - name: Question 2
-  category: sport
+  category: health
 - name: Question 3
   category: business
 - name: Question 4
+  category: business
+- name: Question 5
   category: sport
+- name: Question 6
+  category: sport
+- name: Question 7
+  category: hobby
+- name: Question 8
+  category: hobby

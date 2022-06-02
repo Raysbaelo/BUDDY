@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   resources :tasks do
     resources :occurances
   end
+
+  get :edit_profile, to: 'users#edit_profile'
+  patch :update_profile, to: 'users#update_profile'
 end
