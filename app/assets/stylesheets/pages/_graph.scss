@@ -1,0 +1,73 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: beige;
+}
+
+.sporttrophy {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.hobbytrophy {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.healthtrophy {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.businesstrophy {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.bronze {
+  display: flex;
+  align-items:center;
+  padding: 10px;
+  padding-bottom: 2px;
+  border-radius: 10px
+}
+.bronze img {
+  width: 60px;
+}
+
+.argent {
+  display: flex;
+  align-items:center;
+  padding: 10px;
+  padding-bottom: 2px;
+  border-radius: 10px
+}
+
+.argent img {
+  width: 60px;
+}
+
+.or {
+  display: flex;
+  align-items:center;
+  padding: 10px;
+  padding-bottom: 2px;
+  border-radius: 10px
+}
+
+.or img {
+  width: 60px;
+}
