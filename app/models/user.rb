@@ -5,10 +5,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :tasks, dependent: :destroy
 
-  validates :category_health, presence: true
-  validates :category_sport, presence: true
-  validates :category_business, presence: true
-  validates :category_hobby, presence: true
+  validates :category_health, presence: true, numericality: {less_than_or_equal_to: 2}
+  validates :category_sport, presence: true, numericality: { less_than_or_equal_to: 2}
+  validates :category_business, presence: true, numericality: { less_than_or_equal_to: 2 }
+  validates :category_hobby, presence: true, numericality: { less_than_or_equal_to: 2}
 
 
   after_create :generate_tasks
