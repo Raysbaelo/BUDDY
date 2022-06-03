@@ -1,5 +1,5 @@
 puts "creating user..."
-josie = User.create(email: "josie@hotmail.Com", nickname: "jojo", password: 'wagons')
+josie = User.create(email: "josie@hotmail.com", password: 'wagons')
 puts "Creating tasks.."
 basket = { name: "basket", category: "sport", user_id: josie.id }
 actualisation =  { name: "actualisation", category: "business", user_id: josie.id }
