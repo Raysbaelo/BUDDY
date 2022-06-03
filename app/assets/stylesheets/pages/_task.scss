@@ -1,9 +1,9 @@
-.tasks img{
+.tasks img {
   width: 21px;
   height: 16px;
 }
 
-.tasks{
+.tasks {
   margin-top: 5px;
   margin-bottom: 12px;
   border-radius: 10px 30px 10px 30px;
@@ -16,30 +16,30 @@
   // justify-self:center;
 }
 
-.container{
+.containertask {
   display: flex;
   flex-direction: column;
 
 
 }
 
-body{
+body {
   background-color: white;
 }
 
-.tasks p{
+.tasks p {
   text-align: center;
   padding-left: 10px;
   font-size: 29px;
 
 }
 
-.logo{
+.logo {
   width: 20px;
-  height: 20px ;
+  height: 20px;
 }
 
-.loutre img{
+.loutre img {
   width: 367px;
   height: 300px;
   position: fixed;
