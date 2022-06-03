@@ -1,6 +1,6 @@
 class Task < ApplicationRecord
   belongs_to :user
-  has_many :occurances
+  has_many :occurances, dependent: :destroy
   validates :name, presence: true
   validates :category, presence: true
   validates :frequence, presence: true
@@ -25,7 +25,7 @@ class Task < ApplicationRecord
     when 'health' then "health.png"
     when 'hobby' then "malette.png"
     when 'business' then "valisee.png"
-   end
+    end
   end
 
 end
