@@ -10,36 +10,6 @@
         </td>
       </div>
         <% end %>
-      </div>
-  <div class="topnavbar">
-   <div class="left col-4">
-     <ul class="text">
-       <li id=home>
-        <%= link_to tasks_path do %>
-        <%= image_tag("home.png") %>
-        <% end %>
-      </li>
-      <li id=plus>
-        <%= link_to new_task_path do %>
-        <%= image_tag("plus.png") %>
-        <% end %>
-      </li>
-      <li>
-       <%= link_to buddy_path@user do %>
-       <%= image_tag("loutretete.jpg") %>
-       <% end %>
-      </li>
-      <li id=graph>
-       <%= link_to graph_path do %>
-       <%= image_tag("graph.png") %>
-       <% end %>
-      </li>
-      <li id=logout>
-        <%= link_to destroy_user_session_path, method: :delete do %>
-        <%= image_tag("logout.png") %>
-        <% end %>
-        </li>
-      </ul>
     </div>
- </div>
+  <%= render "navbar" %>
 </div>
