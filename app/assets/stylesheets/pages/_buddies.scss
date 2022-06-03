@@ -1,0 +1,56 @@
+.progressive {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-direction: column;
+  min-height: 35vh;
+  border: 0.1px solid rgb(163, 163, 163);
+  padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.nakedloutre img {
+  object-fit: cover;
+  max-width: 40vh;
+  margin-top: 20%;
+
+}
+
+.titlebuddy {
+  margin: 5px 20px 1px;
+
+}
+
+.progress-bar {
+  border-radius: 30px;
+  height: 8px;
+  width: 150px;
+  border: 1.5px solid rgb(44, 44, 44);
+}
+
+progress {
+  color: lightblue;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+
+progress::-webkit-progress-value {
+  background: rgb(80, 227, 99);
+}
+
+progress::-webkit-progress-bar {
+  background: rgb(255, 255, 255);
+}
+
+body {
+  background-color: blue;
+}
+
+.buddybody {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
