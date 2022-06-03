@@ -12,6 +12,7 @@ class Task < ApplicationRecord
 
   def color
     case category
+
     when 'sport' then '#F5C44D'
     when 'health' then '#A0E295'
     when 'hobby' then '#FF8954'
