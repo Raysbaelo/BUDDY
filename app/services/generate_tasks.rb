@@ -20,12 +20,22 @@ class GenerateTasks
   def create_tasks(category, frequence, number)
     @default_tasks = AVAILABLE_TASKS[category].first(number)
     @default_tasks.each do |task_data|
-      Task.create!(
+      task = Task.create!(
         name: task_data,
         category: category,
         frequence: frequence,
         user: @user
       )
+      generate_occurances(task)
+    end
+  end
+
+  private
+
+  def generate_occurances(task)
+    60.times do |i|
+      data = i.days.from_now
+      Occurance.create!(task: task, date: data)
     end
   end
 end

@@ -6,7 +6,6 @@ class UsersController < ApplicationController
 
   def update_profile
     current_user.update!(user_params)
-    ap "je usis la"
     GenerateTasks.new.call(current_user)
     redirect_to root_path
   end
