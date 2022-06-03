@@ -1,19 +1,17 @@
-
 <div class="container">
   <div class="bulle">
     <% @tasks.each do |task| %>
-      <div class="tasks", style="border: solid 4px <%= task.color%>">
-        <p><%= task.name.capitalize%></p>
+      <div class="tasks", style="border: solid 4px <%= task.color %>">
+        <p><%= task.name.capitalize %></p>
         <div class=logo>
           <%= image_tag( task.logo )%>
         </div>
-           <td><%= link_to task_path(task), method: :delete do %>
-           <%= image_tag("poubelle.png") %>
-         <% end %>
-        </td>
-      </div>
+        <%= link_to task_path(task), method: :delete do %>
+          <%= image_tag("poubelle.png") %>
         <% end %>
-    </div>
+      </div>
+    <% end %>
+  </div>
 
 
     <div class="loutre">

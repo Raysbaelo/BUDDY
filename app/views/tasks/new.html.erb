@@ -6,7 +6,7 @@
         <%= simple_form_for @task do |task| %>
             <div class = "inputsform">
               <%= task.input :name %>
-              <%= task.input :category, collection: ["Sport", "Health", "Business", "Hobby"]%>
+              <%= task.input :category, collection: ["sport", "health", "business", "hobby"]%>
             </div>
             <div class="twobtn">
                 <%= task.submit class: "creatbtn" %>
