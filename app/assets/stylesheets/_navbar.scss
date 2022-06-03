@@ -1,7 +1,7 @@
 .topnavbar{
   border-top: solid 5px #2A9D8F;
   width: 413px;
-  height: 70px;
+  height: 63px;
   border-radius: 18px;
   display: flex;
   align-items: center;
@@ -24,10 +24,11 @@ a{
 }
 
 .topnavbar img{
-  width: 45px;
-  height: 45px;
+  width: 47px;
+  height: 47px;
   border-radius: 25%;
-  padding-bottom: 2px;
+  padding-bottom: 4px;
+  padding-top: 1px;
   background-color: #2A9D8F ;
 }
 

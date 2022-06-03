@@ -4,24 +4,31 @@
 }
 
 .tasks{
-
   margin-top: 5px;
   margin-bottom: 12px;
-  border:  solid 3px #E76F51;;
+  border:  solid 4px #E76F51;;
   border-radius: 10px 30px 10px 30px;
-  font-family: 'Zen Maru Gothic', sans-serif;
-  font-size: large;
+  font-family: 'Zen Maru Gothic', sans-serif, 500;
   background-color: white;
   margin-left: 35px;
-  text-align: center;
+  text-align: right;
+  vertical-align:top;
 }
 
 .div{
   display: flex;
   flex-direction: column;
 
+
 }
 
 body{
   background-color: white;
+}
+
+.tasks p{
+  text-align: left;
+  padding-left: 10px;
+  font-size: 29px;
+
 }
