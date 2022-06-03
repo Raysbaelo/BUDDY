@@ -10,8 +10,9 @@ h1 {
 
 .col img {
   width: 70px;
+  filter: saturate(3);
 }
 
 .grey {
-  filter: grayscale(1);
+  filter: grayscale(1) !important;
 }
