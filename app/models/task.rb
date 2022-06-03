@@ -15,5 +15,6 @@ class Task < ApplicationRecord
     when 'aaa' then '#ff00FF'
     when 'bbb' then '#00FFFF'
     when 'ccc' then '#FFFF00'
+    end
   end
 end
