@@ -1,55 +1,68 @@
-<h1> Trophés </h1>
-<div class="container">
+<div class="container-fluid">
 
-  <div class="sporttrophy">
-  <p>Sport:</p>
-    <div class="bronze">
+  <div class="row">
+    <div class="col">
+      <h1> Trophés </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>Sport:</p>
+    </div>
+    <div class="col">
       <%= image_tag("bronze-medal.png") %>
     </div>
-    <div class="argent">
+    <div class="col">
       <%= image_tag("silver-medal.png") %>
     </div>
-    <div class="or">
+    <div class="col">
       <%= image_tag("gold-medal.png") %>
     </div>
   </div>
 
-  <div class="healthtrophy">
-  <p>Santé:</p>
-     <div class="bronze">
+  <div class="row">
+    <div class="col">
+      <p>Santé:</p>
+    </div>
+     <div class="col">
       <%= image_tag("bronze-medal.png") %>
     </div>
-    <div class="argent">
+    <div class="col">
       <%= image_tag("silver-medal.png") %>
     </div>
-    <div class="or">
+    <div class="col">
+      <%= image_tag("gold-medal.png", class:"grey") %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>hobbies:</p>
+    </div>
+    <div class="col">
+      <%= image_tag("bronze-medal.png") %>
+    </div>
+    <div class="col">
+      <%= image_tag("silver-medal.png") %>
+    </div>
+    <div class="col">
       <%= image_tag("gold-medal.png") %>
     </div>
   </div>
 
-  <div class="hobbytrophy">
-  <p>hobbies:</p>
-    <div class="bronze">
-      <%= image_tag("bronze-medal.png") %>
+  <div class="row">
+    <div class="col">
+      <p>Orga:</p>
     </div>
-    <div class="argent">
-      <%= image_tag("silver-medal.png") %>
-    </div>
-    <div class="or">
-      <%= image_tag("gold-medal.png") %>
-    </div>
-  </div>
-
-  <div class="businesstrophy">
-  <p>Orga:</p>
-    <div class="bronze">
+    <div class="col">
     <%= image_tag("bronze-medal.png") %>
     </div>
-    <div class="argent">
-      <%= image_tag("silver-medal.png") %>
+    <div class="col">
+      <%= image_tag("silver-medal.png", class:"grey") %>
     </div>
-    <div class="or">
-      <%= image_tag("gold-medal.png") %>
+    <div class="col">
+      <%= image_tag("gold-medal.png", class:"grey") %>
     </div>
   </div>
+
 </div>
