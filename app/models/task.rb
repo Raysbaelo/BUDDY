@@ -8,4 +8,12 @@ class Task < ApplicationRecord
   def done!
     occurances.find(date: Date.today).update!(done: true)
   end
+
+  def color
+    case category
+    when 'sport' then '#ffc107'
+    when 'aaa' then '#ff00FF'
+    when 'bbb' then '#00FFFF'
+    when 'ccc' then '#FFFF00'
+  end
 end
