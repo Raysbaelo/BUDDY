@@ -2,7 +2,7 @@
    <div class=div>
       <% @tasks.each do |task| %>
       <div class="tasks">
-        <p><%= task.name%></p>
+        <p><%= task.name.capitalize%></p>
          <td><%= link_to task, method: :delete do %>
          <%= image_tag("poubelle.png") %>
          <% end %>
