@@ -9,6 +9,7 @@ class Task < ApplicationRecord
     occurances.find(date: Date.today).update!(done: true)
   end
 
+
   def color
     case category
     when 'sport' then '#F5C44D'
@@ -26,4 +27,5 @@ class Task < ApplicationRecord
     when 'business' then "valisee.png"
    end
   end
+
 end

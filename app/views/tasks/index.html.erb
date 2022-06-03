@@ -7,6 +7,15 @@
         <div class=logo>
           <%= image_tag( task.logo )%>
         </div>
+
+
+<h1>Tasks to do :</h1>
+<div class="div">
+   <div class="bulle">
+      <% @tasks.each do |task| %>
+      <div class="tasks">
+        <p><%= task.name.capitalize%></p>
+
          <td><%= link_to task, method: :delete do %>
          <%= image_tag("poubelle.png") %>
          <% end %>
@@ -15,8 +24,11 @@
         <% end %>
     </div>
 
+
     <div class="loutre">
-        <%= image_tag("superloutre.png") %>
+        <%= image_tag("Super_Loutre.png") %>
     </div>
     <%= render "navbar" %>
+
+
 </div>
