@@ -1,4 +1,5 @@
-    <div class=div>
+
+   <div class=div>
       <% @tasks.each do |task| %>
       <div class="tasks">
         <p><%= task.name%></p>
@@ -8,16 +9,15 @@
         </td>
       </div>
         <% end %>
-</div>
   <div class="topnavbar">
    <div class="left col-4">
      <ul class="text">
-       <li>
+       <li id=home>
         <%= link_to tasks_path do %>
         <%= image_tag("home.png") %>
         <% end %>
       </li>
-      <li>
+      <li id=plus>
         <%= link_to new_task_path do %>
         <%= image_tag("plus.png") %>
         <% end %>
@@ -27,12 +27,12 @@
        <%= image_tag("loutretete.jpg") %>
        <% end %>
       </li>
-      <li>
+      <li id=graph>
        <%= link_to graph_path do %>
        <%= image_tag("graph.png") %>
        <% end %>
       </li>
-      <li>
+      <li id=logout>
         <%= link_to destroy_user_session_path, method: :delete do %>
         <%= image_tag("logout.png") %>
         <% end %>
@@ -40,3 +40,4 @@
       </ul>
     </div>
  </div>
+</div>
