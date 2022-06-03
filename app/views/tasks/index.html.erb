@@ -1,6 +1,8 @@
 
-<div class=div>
-   <div class=bulle>
+
+<h1>Tes tâches à faire :</h1>
+<div class="div">
+   <div class="bulle">
       <% @tasks.each do |task| %>
       <div class="tasks">
         <p><%= task.name.capitalize%></p>
@@ -11,5 +13,6 @@
       </div>
         <% end %>
     </div>
+    <%= image_tag("Super_Loutre.png") %>
   <%= render "navbar" %>
 </div>
