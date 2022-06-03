@@ -1,5 +1,4 @@
 class TasksController < ApplicationController
-
   before_action :set_task, only: [:show, :edit, :update, :destroy];
 
   def index
@@ -22,7 +21,7 @@ class TasksController < ApplicationController
       redirect_to tasks_path
 
     else
-      render :index
+      render :new
     end
   end
 
