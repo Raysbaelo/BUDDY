@@ -1,44 +1,125 @@
-.inputsform {
-  display: flex;
+#addtasktitle{
+  color: #E67E22;
+  font-size: 40px;
   text-align: center;
-
+  padding: 40px;
+  margin-bottom: -30px;
+  margin-left: 30px;
 }
-// .form-label {
 
 
-// }
-// .form-select{
-//   // width: 80%;
-// }
+.nameform {
+  text-align: center;
+}
 
-// .form-control {
-//   // width: 80%;
-// }
+#inputid{
+  font-size: 20px;
+}
 
-a {
-  text-decoration: none;
-  color: black;
+
+#task_category_health {
+  color: #A0E295;
+  padding: 5px;
+}
+
+#pcategory{
+  margin-left: 55px;
+  font-size: 20px;
+}
+
+.radiobtn {
+  padding: 20px;
+  margin-top: -30px;
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+}
+
+
+
+.collection_radio_buttons {
+  padding: 18px 10px 30px 10px;
+  text-align: center;
+  border: 2px solid #EAEAEA;
+  border-radius: 4px;
+  background-color: white;
+  margin: 8px;
+  height: 70px;
+  width: 90px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  flex-grow: 1;
+  }
+
+
+  #task_category_health   {
+    background-color: #FD1015;
+    border-color: #FD1015;
+    position: absolute;
+    right: 173px;
+    bottom: 480px;
+    // visibility: hidden;
+  }
+
+  #task_category_sport {
+    // visibility: hidden;
+    position: absolute;
+    right: 234px;
+    bottom: 480px;
+  }
+
+  #task_category_business {
+    // visibility: hidden;
+    position: absolute;
+    right: 234px;
+    bottom: 394px;
+  }
+
+  #task_category_hobby {
+    // visibility: hidden;
+    position: absolute;
+    right: 173px;
+    bottom: 394px;
+  }
+
+  .collection_radio_buttons:checked {
+    color: red !important;
+  }
+
+
+.form-label {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
 .bg-white {
   margin-left: 30px;
+  margin-bottom: -60px;
+  border-radius: 20px !important;
+  opacity: 0.4px;
 }
+
 
 .twobtn {
   display: flex;
   justify-content: space-evenly;
 
-}
-
-.backbtn {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  background: bisque;
-  border-radius: 20px;
 
 }
+
+// .backbtn {
+//   font-family: inherit;
+//   font-size: inherit;
+//   line-height: inherit;
+//   background: bisque;
+//   border-radius: 20px;
+//   text-decoration: none;
+//   color: black;
+// }
 
 .creatbtn  {
   margin: 0;
@@ -48,3 +129,27 @@ a {
   background: bisque;
   border-radius: 20px;
 }
+
+
+
+.SuperloutreFlying img {
+  object-fit: cover;
+  max-width: 40vh;
+  margin-top: 20%;
+  position: absolute;
+  right: 150px;
+  bottom: 80px;
+
+}
+
+
+
+// when 'sport' then '#F5C44D'
+// when 'health' then '#A0E295'
+// when 'hobby' then '#FF8954'
+// when 'business' then '#FF5F5F'
+
+// when 'sport' then "altere.png"
+// when 'health' then "health.png"
+// when 'hobby' then "malette.png"
+// when 'business' then "valisee.png"

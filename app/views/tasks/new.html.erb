@@ -1,21 +1,26 @@
- <div class="container py-5">
+ <div class="container">
   <div class="row">
-    <div class="col-12 col-xs-12">
+    <div class="col-12 col-xs-6">
+        <h1 id="addtasktitle">Which task do you want to add</h1>
       <div class="bg-white rounded p-3 shadow">
-        <h1>Which task do you want to add? </h1>
         <%= simple_form_for @task do |task| %>
-            <div class = "inputsform">
-              <%= task.input :name %>
-              <%= task.input :category, collection: ["sport", "health", "business", "hobby"]%>
-            </div>
-            <div class="twobtn">
-                <%= task.submit class: "creatbtn" %>
-               <%= link_to 'Back', tasks_path, class: 'backbtn' %>
-            </div>
-        <% end %>
+          <div class="nameform">
+            <%= task.input :name, :label => 'Name',:required => false, placeholder: 'Add your task' %>
+          </div>
+          <p id="pcategory">Choose a category</p>
+          <div class="radiobtn">
+          <%= task.collection_radio_buttons :category, [['sport', 'sport'] ,['health', 'health'], ['business', 'business'] ,['hobby', 'hobby']],:first, :last, wrapper_html: { style: "display: none" } %>
+          </div>
+          <div class="twobtn">
+            <%= task.submit class: "creatbtn" %>
+            <%# <%= link_to 'Back', tasks_path, class:"backbtn" %>
+            <% end %>
+          </div>
+      </div>
+      <div  class="SuperloutreFlying">
+        <%= image_tag("SuperloutreFlying.png") %>
       </div>
     </div>
   </div>
-  <%= image_tag("SuperloutreFlying.png")%>
   <%= render "navbar" %>
 </div>
