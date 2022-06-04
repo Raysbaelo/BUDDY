@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy];
 
+
   def index
     @user = current_user
     @tasks = @user.tasks
@@ -19,7 +20,6 @@ class TasksController < ApplicationController
     @task.user = current_user
     if @task.save
       redirect_to tasks_path
-
     else
       render :new
     end

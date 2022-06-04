@@ -5,8 +5,7 @@
         <h3>Edit your task</h3>
         <%= simple_form_for @task do |task| %>
           <%= task.input :name %>
-          <%= task.input :frequence, collection: ["Daily"," Weekly", "Monthly", "Yearly"] %>
-          <%= task.input :category, collection: ["Sport", "Health", "Business", "Hobby"]%>
+          <%= task.collection_radio_buttons :category, [['sport', 'sport'] ,['health', 'health'], ['business', 'business'] ,['hobby', 'hobby']],:first, :last %>
           <%= task.submit class: 'btn btn-secondary' %>
           <%= link_to 'Back', tasks_path %>
         <% end %>
