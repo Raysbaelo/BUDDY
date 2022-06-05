@@ -3,7 +3,8 @@
     <div class="col-sm">
       <% @tasks.each do |task| %>
       <div class="tasks", style="border: solid 7px <%= task.color %>">
-          <%= image_tag( task.logo )%>
+          <%= image_tag( task.logo ) %>
+
           <p><%= task.name.capitalize %></p>
           <div class="col-sm" id="bin">
            <%= link_to task_path(task), method: :delete do %>

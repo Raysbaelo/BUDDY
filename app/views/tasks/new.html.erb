@@ -9,7 +9,9 @@
           </div>
           <p id="pcategory">Choose a category</p>
           <div class="radiobtn">
-          <%= task.collection_radio_buttons :category, [['sport', 'sport'] ,['health', 'health'], ['business', 'business'] ,['hobby', 'hobby']],:first, :last, wrapper_html: { style: "display: none" } %>
+            <%= task.collection_radio_buttons(:category, [['sport','sport'] ,['health', 'health'], ['business', 'business'] ,['hobby','hobby']], :first, :last) do |b| %>
+                <%= b.label(:class => "#{b.text}_collection_radio_buttons") { b.radio_button + image_tag(b.text+'.png') } %>
+                <% end %>
           </div>
           <div class="twobtn">
             <%= task.submit class: "creatbtn" %>

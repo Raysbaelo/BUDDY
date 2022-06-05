@@ -19,10 +19,10 @@ class Task < ApplicationRecord
 
   def logo
     case category
-    when 'sport' then "altere.png"
-    when 'health' then "coeur.png"
-    when 'hobby' then "jeux.png"
-    when 'business' then "valisee.png"
+    when 'sport' then "sport.png"
+    when 'health' then "health.png"
+    when 'hobby' then "hobby.png"
+    when 'business' then "business.png"
     end
   end
 

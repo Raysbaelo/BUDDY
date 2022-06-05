@@ -7,19 +7,17 @@
   margin-left: 55px;
 }
 
-
 .nameform {
   text-align: center;
 }
 
-.form-label {
+.form-label  {
   font-size: 20px;
 }
 
 #inputid{
   font-size: 20px;
 }
-
 
 #pcategory{
   margin-left: 70px;
@@ -38,57 +36,58 @@
   // position: relative;
 }
 
-
-
-.collection_radio_buttons {
-  padding: 18px 10px 30px 10px;
+.radiobtn img {
+  padding: 9px 5px 15px 5px;
   text-align: center;
   border: 2px solid #EAEAEA;
   border-radius: 25px;
   background-color: white;
   margin: 8px;
-  height: 70px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   flex-grow: 1;
-  }
 
+}
+
+.sport_collection_radio_buttons img:hover{
+  background-color: #F5C44D
+}
+
+.health_collection_radio_buttons img:hover{
+  background-color: #A0E295;
+}
+
+.business_collection_radio_buttons img:hover{
+  background-color: #FF5F5F;
+}
+
+.hobby_collection_radio_buttons img:hover{
+  background-color: #FF8954;
+}
 
   #task_category_health   {
-    background-color: #FD1015;
-    border-color: #FD1015;
-    position: absolute;
-    right: 135px;
-    bottom: 186px;
-    // visibility: hidden;
+    visibility: hidden;
+  }
+
+  #task_category_health  {
+    visibility: hidden;
   }
 
   #task_category_sport {
-    // visibility: hidden;
-    position: absolute;
-    right: 205px;
-    bottom: 185px;
+    visibility: hidden;
 }
 
   #task_category_business {
-    // visibility: hidden;
-    position: absolute;
-    right: 205px;
-    bottom: 100px;
+    visibility: hidden;
   }
 
   #task_category_hobby {
-    // visibility: hidden;
-    position: absolute;
-    right: 135px;
-    bottom: 100px;
+    visibility: hidden;
   }
 
-  // .collection_radio_buttons:checked {
-  //   color: red !important;
-  // }
 
 .bg-white {
   margin-left: 30px;
@@ -127,26 +126,10 @@
 
 }
 
-
-
 .SuperloutreFlying {
-  // object-fit: cover;
-  max-width: 60vh;
+  max-width: 50vh;
   margin-top: 20%;
   position: absolute;
-  right: 30px;
-  bottom: 85px;
+  right: 95px;
+  bottom: 65px;
 }
-
-
-
-
-// when 'sport' then '#F5C44D'
-// when 'health' then '#A0E295'
-// when 'hobby' then '#FF8954'
-// when 'business' then '#FF5F5F'
-
-// when 'sport' then "altere.png"
-// when 'health' then "health.png"
-// when 'hobby' then "malette.png"
-// when 'business' then "valisee.png"
