@@ -52,3 +52,24 @@ a{
 #logout img{
   background-color: #A0E295;
 }
+
+/////// active styles /////
+#home img:active{
+  transform: rotate(180deg);
+  background-color: #6a2929;
+}
+
+#plus img:active{
+  transform: rotate(180deg);
+  background-color: #80462b;
+}
+
+#graph img:active{
+  transform: rotate(90deg);
+  background-color: #745c25;
+}
+
+#logout img:active{
+  transform: rotate(180deg);
+  background-color: #4b6c45;
+}
