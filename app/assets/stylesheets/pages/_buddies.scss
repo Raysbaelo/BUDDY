@@ -23,21 +23,19 @@
   align-items: center;
   flex-direction: column;
   margin: 3%;
-
   padding: 16px 13px;
-  ;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  background: linear-gradient(115deg, rgba(255, 149, 150, 1) 3%, rgba(244, 118, 120, 1) 16%, rgba(239, 102, 104, 1) 27%, rgba(244, 65, 68, 0.9612438725490196) 46%, rgba(236, 98, 100, 1) 62%, rgba(239, 125, 127, 1) 74%, rgba(255, 140, 141, 1) 87%, rgba(247, 187, 188, 1) 96%, rgba(255, 187, 188, 1) 96%, rgba(255, 185, 185, 1) 98%);
 }
 
 .score {
-  background-color: rgb(255, 255, 255);
-  border: 0.5px solid rgb(214, 214, 214);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: black;
+  background-color: #ffffff;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+  font-size: 40px;
+  text-shadow: #282828;
 }
 
 .completed {
@@ -54,8 +52,12 @@
   background-color: #282828;
   color: whitesmoke;
 
-
 }
+
+.typed-js {
+  min-height: 25.6px;
+}
+
 
 .texts {
   color: white;
