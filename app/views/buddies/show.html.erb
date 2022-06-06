@@ -1,4 +1,3 @@
-<h1 class="buddy">YOUR BUDDY</h1>
 <div class="test">
 
   <div class="texts">
@@ -8,7 +7,9 @@
     <p class="keep">
       Wow, good job keep it up!</p>
     <div class="score">
-      <p>5/9</p>
+      <p>
+        5/9
+      </p>
     </div>
   </div>
   <div class="nakedloutre">
@@ -21,6 +22,7 @@
 
   <div class="progressivebar">
 
+    <div><span class="" data-controller="typed-js"></span></div>
     <% current_user.score.each do |category, value| %>
       <%= category %>:
       <progress class="progress-bar" value="<%= value %>" max="100"></progress>
