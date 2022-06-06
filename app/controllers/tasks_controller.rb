@@ -4,20 +4,29 @@ class TasksController < ApplicationController
 
   def index
     @user = current_user
-    @tasks = @user.tasks
+    @tasks = @user.current_tasks
     @task = Task.new
+
   end
 
   def new
     @task = Task.new
+
   end
 
   def edit
   end
 
+  def update
+    @task.done!
+
+    redirect_to tasks_path
+  end
+
   def create
     @task = Task.new(task_params)
     @task.user = current_user
+    @task.curren == false
     if @task.save
       redirect_to tasks_path
     else
