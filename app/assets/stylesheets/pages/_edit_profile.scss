@@ -66,6 +66,10 @@
   height: auto;
 }
 
+.photoyes img:active {
+  filter: grayscale(1)
+}
+
 .photono {
   width: 80%;
   justify-content: center;
@@ -75,4 +79,5 @@
 .photono img {
   width: 100%;
   height: auto;
+  transition: 0.8s;
 }
