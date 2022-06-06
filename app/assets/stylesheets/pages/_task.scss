@@ -1,5 +1,5 @@
 .task img {
-  height: 43px;
+  height: 40px;
 }
 
 
@@ -16,6 +16,7 @@
     padding-right: 10px;
     justify-content: space-between;
     font-family: 'Zen Maru Gothic', sans-serif, 500 !important;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
 }
 
 #bin img {
@@ -34,7 +35,7 @@ body {
 .task p {
   text-align: center;
   padding-left: 10px;
-  font-size: 23px;
+  font-size: 26px;
 
 }
 
@@ -69,7 +70,9 @@ body {
   height: 43px;
 }
 
-.updatebtn {
-  padding: 10px;
-  border: 2px solid black#FF8D29;
-}
+
+
+// .btn{
+//   width: 20px;
+//   height: 20px;
+// }

@@ -22,7 +22,7 @@ class Task < ApplicationRecord
   def logo
     case category
     when 'sport' then "sport.png"
-    when 'health' then "coeur.png"
+    when 'health' then "health.png"
     when 'hobby' then "hobby.png"
     when 'business' then "business.png"
                                                                                                                                                                                   end
