@@ -1,16 +1,39 @@
-- name: Question 1
+- name: Santé physique ?
   category: health
-- name: Question 2
+  image-yes: "tea.png"
+  image-no: "beer.png"
+
+- name: Santé physique ?
   category: health
-- name: Question 3
+  image-yes: "powerfull.png"
+  image-no: "anxiety.jpg"
+
+- name: Etat professionnel ?
   category: business
-- name: Question 4
+  image-yes: "businessman.png"
+  image-no: "lazycouch.png"
+
+- name: Organisation ?
   category: business
-- name: Question 5
+  image-yes: "organised.webp"
+  image-no: "unorganised.webp"
+
+- name: Entrainement ?
   category: sport
-- name: Question 6
+  image-yes: "gym.png"
+  image-no: "netflixnchill.png"
+
+- name: Effort ou Confort ?
   category: sport
-- name: Question 7
+  image-yes: "run.png"
+  image-no: "support.png"
+
+- name: Sociable ?
   category: hobby
-- name: Question 8
+  image-yes: "party.png"
+  image-no: "meditealone.png"
+
+- name: Activité ?
   category: hobby
+  image-yes: "skateboard.png"
+  image-no: "sleep.png"
