@@ -2,7 +2,7 @@
  <div class="container">
   <div class="row">
     <div class="col-12 col-xs-6">
-        <h1 id="addtasktitle">Which task do you want to add</h1>
+        <h1 id="addtasktitle">Add a task</h1>
       <div class="bg-white rounded p-3 shadow">
         <%= simple_form_for @task do |task| %>
           <div class="nameform">
@@ -15,7 +15,7 @@
                 <% end %>
           </div>
           <div class="twobtn">
-            <%= task.submit class: "creatbtn" %>
+            <%= task.submit class: "creatbtn", :value => 'Create', data: { disable_with: false } %>
             <% end %>
           </div>
       </div>
