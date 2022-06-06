@@ -6,15 +6,19 @@
           <%= image_tag( task.logo ) %>
 
           <p><%= task.name.capitalize %></p>
-          <div class="col-sm" id="bin">
+          <div class="col-">
+           <input class="case" type="checkbox" id="coding" name="interest" value="coding">
+          <label for="coding"></label>
+          </div>
+      </div>
+    </div>
+      <div class="col-sm" id="bin">
            <%= link_to task_path(task), method: :delete do %>
           <%= image_tag("poubelle.png") %>
-        <% end %>
-        </div>
-      </div>
+         <% end %>
       <% end %>
-     </div>
-    </div>
+      </div>
+  </div>
     <div class= "col-sm">
       <div class="loutre">
         <%= image_tag("Super_Loutre.png") %>
