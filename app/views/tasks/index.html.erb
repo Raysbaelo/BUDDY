@@ -3,7 +3,7 @@
   <div class= "row-">
     <div class="col-sm">
       <% @tasks.each do |task| %>
-        <div class="task", style="border: solid 5px <%= task.color %>">
+        <div class="task", style="border: solid 3px <%= task.color %>">
           <%= image_tag( task.logo ) %>
           <p><%= task.name.capitalize %></p>
           <div class="col-">
@@ -13,11 +13,7 @@
               <% end %>
             <% end %>
           </div>
-        </div>
-        <div class="col-sm" id="bin">
-          <%= link_to task_path(task), method: :delete do %>
-            <%= image_tag("poubelle.png") %>
-          <% end %>
+
         </div>
       <% end %>
     </div>
