@@ -1,11 +1,14 @@
-<h1>Users#edit_profile</h1>
-
+<%= render "shared/banner" %>
+<div class="bannerquestions">
+  <h1><strong>Qui es-tu ?</strong></h1>
+  <p>Avant de commencer, nous avons besoin de mieux te connaitre ! Choisis l'image qui te représente le mieux :</p>
+</div>
 <div data-controller="parent">
 
   <%= simple_form_for(current_user, url: update_profile_path, html: {data: {'parent-target': 'form'}}) do |f| %>
     <%= f.error_notification %>
 
-    <div class="d-noneeeee">
+    <div class="d-none">
       <%= f.input :category_sport,
                   required: true,
                   input_html: { autocomplete: "category sport", min: '0', max: '2',  data: {'parent-target': "sportInput"} } %>
@@ -23,29 +26,21 @@
                   input_html: { autocomplete: "category health", min: '0', max: '2',  data: {'parent-target': "healthInput"} } %>
     </div>
   <% end %>
-
-  <hr>
-
-  <div class="questions">
-    <% YAML.load_file('data/questions.yml').each do |question| %>
-      <div
-        class="d-none"
-        data-parent-target="question"
-        data-controller="enfant"
-        data-enfant-category-value="<%= question["category"] %>"
-        data-action="yes->parent#addCategory no->parent#next"
-      >
-        <div class="options" data-enfant-target="option">
-          <%= question["name"] %>
-          -
-          <%= question["category"] %>
-
-          <span data-action="click->enfant#yes">Oui</span>
-          -
-          <span data-action="click->enfant#no">Non</span>
+  <div class="container">
+    <div class="questions">
+      <% YAML.load_file('data/questions.yml').each do |question| %>
+        <div class="d-none" data-parent-target="question" data-controller="enfant" data-enfant-category-value="<%= question["category"] %>" data-action="yes->parent#addCategory no->parent#next">
+          <div class="options" data-enfant-target="option">
+            <div class="questionname">
+              <span class="namequestion"><%= question["name"] %><span class="d-none"><%= question["category"] %></span></span>
+            </div>
+            <div class="questionss">
+              <div class="photoyes" data-action="click->enfant#yes"><%= image_tag question["image-yes"]  %></div>
+              <div class="photono" data-action="click->enfant#no"><%= image_tag question["image-no"]  %></div>
+            </div>
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
-
 </div>
