@@ -1,10 +1,10 @@
-.tasks img {
+.task img {
   height: 43px;
 }
 
 
 
-.tasks {
+.task {
     width: 100%;
     margin-top: 13px;
     margin-bottom: 12px;
@@ -18,7 +18,7 @@
     justify-content: space-between;
 }
 
-#bin img{
+#bin img {
   width: 40px;
   height: 40px;
   display: flex;
@@ -30,7 +30,7 @@ body {
   background-color: white;
 }
 
-.tasks p {
+.task p {
   text-align: center;
   padding-left: 10px;
   font-size: 29px;
@@ -52,7 +52,7 @@ body {
 }
 .row-{
   margin: 19px;
-  width: 100%;
+  width: 90vw;
   height: 523px;
   overflow-y: scroll;
 }
@@ -60,11 +60,20 @@ body {
 .case{
   width: 35px;
   height: 35px;
-
 }
 
 .row-img{
-  width: 40px;
-  height: 40px;
 
+  width: 43px;
+  height: 43px;
+}
+
+.updatebtn {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background: #FF8D29;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid #FF8D29;
 }

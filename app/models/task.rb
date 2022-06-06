@@ -4,8 +4,10 @@ class Task < ApplicationRecord
   validates :name, presence: true
   validates :category, presence: true
 
+  scope :done, -> { joins(:occurances).where(occurances: {done: true, date: Date.today}) }
+
   def done!
-    occurances.find(date: Date.today).update!(done: true)
+    occurances.find_by(date: Date.today).update!(done: true)
   end
 
   def color
@@ -20,7 +22,7 @@ class Task < ApplicationRecord
   def logo
     case category
     when 'sport' then "sport.png"
-    when 'health' then "health.png"
+    when 'health' then "coeur.png"
     when 'hobby' then "hobby.png"
     when 'business' then "business.png"
     end
