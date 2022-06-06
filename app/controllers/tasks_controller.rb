@@ -4,8 +4,8 @@ class TasksController < ApplicationController
 
   def index
     @user = current_user
-    @tasks = @user.current_tasks
     @task = Task.new
+    @tasks = @user.current_tasks
 
   end
 
@@ -26,8 +26,8 @@ class TasksController < ApplicationController
   def create
     @task = Task.new(task_params)
     @task.user = current_user
-    @task.curren == false
     if @task.save
+      generate_occurances(@task)
       redirect_to tasks_path
     else
       render :new
@@ -47,6 +47,13 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:name, :category, :frequence)
+    params.require(:task).permit(:name, :category)
+  end
+
+  def generate_occurances(task)
+    60.times do |i|
+      data = i.days.from_now
+      Occurance.create!(task: task, date: data, done: false)
+    end
   end
 end
