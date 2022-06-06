@@ -25,7 +25,7 @@ class Task < ApplicationRecord
     when 'health' then "coeur.png"
     when 'hobby' then "hobby.png"
     when 'business' then "business.png"
-    end
+                                                                                                                                                                                  end
   end
 
 end
