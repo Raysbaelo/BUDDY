@@ -7,7 +7,7 @@ class Task < ApplicationRecord
   scope :done, -> { joins(:occurances).where(occurances: {done: true, date: Date.today}) }
 
   def done!
-    occurances.find(date: Date.today).update!(done: true)
+    occurances.find_by(date: Date.today).update!(done: true)
   end
 
   def color

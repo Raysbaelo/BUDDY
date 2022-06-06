@@ -1,7 +1,7 @@
 # User.destroy_all
 
 
-u = User.create!(email: 'toto@gmail.com',
+u = User.create!(email: 'yuyu@gmail.com',
                 nickname: 'toto',
                 password: 'azerty',
                 category_health: 2,
@@ -10,6 +10,7 @@ u = User.create!(email: 'toto@gmail.com',
                 category_hobby: 2
                 )
 
+GenerateTasks.new.call(u)
 
 
 

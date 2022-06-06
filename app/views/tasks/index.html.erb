@@ -2,29 +2,32 @@
   <div class= "row-">
     <div class="col-sm">
       <% @tasks.each do |task| %>
-      <div class="tasks", style="border: solid 7px <%= task.color %>">
+        <div class="task", style="border: solid 7px <%= task.color %>">
           <%= image_tag( task.logo ) %>
-
           <p><%= task.name.capitalize %></p>
           <div class="col-">
-           <input class="case" type="checkbox" id="coding" name="interest" value="coding">
-          <label for="coding"></label>
+            <%= simple_form_for(task, remote: true) do |f| %>
+              <%= f.submit class: "updatebtn" %>
+            <% end %>
+            <label for="coding"></label>
           </div>
-      </div>
-    </div>
-      <div class="col-sm" id="bin">
-           <%= link_to task_path(task), method: :delete do %>
-          <%= image_tag("poubelle.png") %>
-         <% end %>
+        </div>
+        <div class="col-sm" id="bin">
+          <%= link_to task_path(task), method: :delete do %>
+            <%= image_tag("poubelle.png") %>
+          <% end %>
+        </div>
       <% end %>
-      </div>
-  </div>
-    <div class= "col-sm">
-      <div class="loutre">
-        <%= image_tag("Super_Loutre.png") %>
-      </div>
-      <div class="col-sm">
-        <%= render "navbar" %>
-      </div>
     </div>
+  </div>
+
+  <div class= "col-sm">
+    <div class="loutre">
+      <%= image_tag("Super_Loutre.png") %>
+    </div>
+    <div class="col-sm">
+      <%= render "navbar" %>
+    </div>
+  </div>
+
 </div>
