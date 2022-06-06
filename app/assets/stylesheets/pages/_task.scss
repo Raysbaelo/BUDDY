@@ -28,7 +28,7 @@
 
 body {
   background-color: white;
-  font-family: 'Zen Maru Gothic', sans-serif, 500 !important;
+  font-family: 'Zen Maru Gothic', 500 !important;
 }
 
 .task p {
@@ -54,7 +54,7 @@ body {
 .row-{
   margin: 19px;
   width: 90vw;
-  height: 523px;
+  height: 451px;
   overflow-y: scroll;
 }
 
@@ -70,11 +70,6 @@ body {
 }
 
 .updatebtn {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  background: #FF8D29;
-  border-radius: 20px;
   padding: 10px;
-  border: 2px solid #FF8D29;
+  border: 2px solid black#FF8D29;
 }

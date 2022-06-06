@@ -3,14 +3,15 @@
   <div class= "row-">
     <div class="col-sm">
       <% @tasks.each do |task| %>
-        <div class="task", style="border: solid 7px <%= task.color %>">
+        <div class="task", style="border: solid 5px <%= task.color %>">
           <%= image_tag( task.logo ) %>
           <p><%= task.name.capitalize %></p>
           <div class="col-">
             <%= simple_form_for(task, remote: true) do |f| %>
-              <%= f.submit class: "updatebtn" %>
+              <%= button_tag( :class => "btn") do %>
+                <%= image_tag "done.png" %>
+              <% end %>
             <% end %>
-            <label for="coding"></label>
           </div>
         </div>
         <div class="col-sm" id="bin">
