@@ -5,6 +5,7 @@
         <div class="task", style="border: solid 7px <%= task.color %>">
           <%= image_tag( task.logo ) %>
           <p><%= task.name.capitalize %></p>
+
           <div class="col-">
             <%= simple_form_for(task, remote: true) do |f| %>
               <%= f.submit class: "updatebtn" %>
