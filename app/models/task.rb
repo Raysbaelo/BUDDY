@@ -5,7 +5,7 @@ class Task < ApplicationRecord
   validates :category, presence: true
 
   def done!
-    occurances.find(date: Date.today).update!(done: true)
+    occurances.find_by(date: Date.today).update!(done: true)
   end
 
   def color
