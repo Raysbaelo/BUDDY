@@ -25,6 +25,8 @@ class Task < ApplicationRecord
     when 'sport' then "sport.png"
     when 'health' then "health.png"
     when 'hobby' then "hobby.png"
-    when 'business' then "business.png"                                                                                                                                                                            end
+    when 'business' then "business.png"
+    end
+
   end
 end

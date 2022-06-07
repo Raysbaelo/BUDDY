@@ -17,7 +17,8 @@
 </div>
 <div class="progressive">
   <% general_score = current_user.tasks.done.count %>
-  <p>XP :</p><progress class="progress-bar" value="<%= general_score %>" max="18"></progress>
+  <p class="xp">XP</p>
+  <progress class="progress-bar" value="<%= general_score %>" max="18"></progress>
 </div>
 
 <%= render "tasks/navbar" %>

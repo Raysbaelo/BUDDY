@@ -1,3 +1,55 @@
+
+.popup {
+  position: fixed;
+  border: 2px solid black;
+  top: 20%;
+  right: 1%;
+  background-color: white;
+  padding: 30px 30px;
+  width: 90%;
+  border-radius: 0 25px 0 25px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
+  margin-right: 4%;
+
+  &.active {
+    opacity: 1;
+    transition: opacity 0.3s;
+    z-index: 3;
+    filter: blur(0);
+  }
+}
+
+.SuperloutreFlying {
+  max-width: 50vh;
+  margin-top: 20%;
+  position: absolute;
+  right: 95px;
+  bottom: 65px;
+
+  &.active {
+    visibility: hidden;
+  }
+}
+
+.croix {
+  position: relative;
+}
+
+.popup img {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  width: 100%;
+}
+
+.bigbigcontainer {
+  &.active {
+    filter: blur(8px);
+  }
+}
+
 #addtasktitle{
   color: black;
   font-size: 40px;
@@ -138,12 +190,4 @@
   padding: 10px;
   border: 2px solid white;
 
-}
-
-.SuperloutreFlying {
-  max-width: 50vh;
-  margin-top: 20%;
-  position: absolute;
-  right: 95px;
-  bottom: 65px;
 }

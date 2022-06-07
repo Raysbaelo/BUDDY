@@ -26,7 +26,7 @@ class TasksController < ApplicationController
     @task.user = current_user
     if @task.save
       generate_occurances(@task)
-      redirect_to tasks_path
+      # redirect_to tasks_path
     else
       render :new
     end
