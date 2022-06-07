@@ -1,27 +1,37 @@
 <%= render "shared/banner" %>
 <div class="container-task">
-  <div class= "row-">
-    <div class="col-sm">
-      <% @tasks.each do |task| %>
-        <div class="task", style="border: solid 3px <%= task.color %>">
-          <%= image_tag( task.logo ) %>
-          <p><%= task.name.capitalize %></p>
-          <div class="col-">
-            <%= simple_form_for(task, remote: true) do |f| %>
-              <%= button_tag( :class => "btn") do %>
-                <%= image_tag "done.png" %>
-              <% end %>
-            <% end %>
-          </div>
+  <div data-controller="validate">
+    <div class="popup" data-validate-target="validate">
+      <h1>Bien joué ! Tu as validé cette tâche !</h1>
+      <h2>C'est en avançant petit à petit qu'on fait de grandes choses, continues comme ça !</h2>
+      <a class ="croix" href="" data-action="click->validate#hidePopup">X</a>
+      <%=  image_tag("SuperloutreWelldone.png", size: "200") %>
+    </div>
+    <div class="bigbigcontainer" data-validate-target="container">
+      <div class= "row-">
+        <div class="col-sm">
 
+          <% @tasks.each do |task| %>
+            <div class="task", style="border: solid 3px <%= task.color %>">
+              <%= image_tag( task.logo ) %>
+              <p><%= task.name.capitalize %></p>
+              <div class="col-sm">
+                <%= simple_form_for task, remote: true, html: { 'data-action': "ajax:success->validate#displayPopup" } do |f| %>
+                  <%= button_tag( :class => "btn") do %>
+                    <%= image_tag "done.png" %>
+                  <% end %>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
         </div>
-      <% end %>
+      </div>
     </div>
   </div>
 
   <div class= "col-sm">
     <div class="loutre">
-      <%= image_tag("Super_Loutre.png") %>
+      <%= image_tag("Super_Loutre.png", class: 'SuperLoutre') %>
     </div>
     <div class="col-sm">
       <%= render "navbar" %>

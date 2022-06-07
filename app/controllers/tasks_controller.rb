@@ -1,17 +1,14 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy];
 
-
   def index
     @user = current_user
     @task = Task.new
     @tasks = @user.current_tasks
-
   end
 
   def new
     @task = Task.new
-
   end
 
   def edit
@@ -20,7 +17,7 @@ class TasksController < ApplicationController
   def update
     @task.done!
 
-    redirect_to tasks_path
+    # redirect_to tasks_path
   end
 
   def create
