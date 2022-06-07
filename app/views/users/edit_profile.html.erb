@@ -31,9 +31,6 @@
       <% YAML.load_file('data/questions.yml').each do |question| %>
         <div class="d-none" data-parent-target="question" data-controller="enfant" data-enfant-category-value="<%= question["category"] %>" data-action="yes->parent#addCategory no->parent#next">
           <div class="options" data-enfant-target="option">
-            <div class="questionname">
-              <span class="namequestion"><%= question["name"] %><span class="d-none"><%= question["category"] %></span></span>
-            </div>
             <div class="questionss">
               <div class="photoyes" data-action="click->enfant#yes"><%= image_tag question["image-yes"]  %></div>
               <div class="photono" data-action="click->enfant#no"><%= image_tag question["image-no"]  %></div>
