@@ -6,7 +6,7 @@
         <div class="task", style="border: solid 3px <%= task.color %>">
           <%= image_tag( task.logo ) %>
           <p><%= task.name.capitalize %></p>
-          <div class="col-">
+          <div class="col-sm">
             <%= simple_form_for(task, remote: true) do |f| %>
               <%= button_tag( :class => "btn") do %>
                 <%= image_tag "done.png" %>
