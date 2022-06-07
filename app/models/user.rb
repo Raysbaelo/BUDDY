@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :tasks, dependent: :destroy
 
-  def current_tasks # les tâches à faire
+  def current_tasks
     Task.joins(:occurances).where(occurances: {date: Date.today, done: false}, tasks: {user_id: id} )
   end
 
