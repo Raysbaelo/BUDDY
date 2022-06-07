@@ -16,7 +16,7 @@ class Task < ApplicationRecord
     when 'sport' then '#F5C44D'
     when 'health' then '#A0E295'
     when 'hobby' then '#FF8954'
-    when 'business' then '#FF5F5F'
+    when 'business' then '#2FC2FF'
     end
   end
 

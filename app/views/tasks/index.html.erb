@@ -1,5 +1,25 @@
 <%= render "shared/banner" %>
 <div class="container-task">
+
+    <div class="col-sm">
+      <div class="loutre">
+        <%= image_tag("Super_Loutre.png") %>
+      </div>
+    </div>
+  <div class= "row-">
+    <div class="col-sm">
+      <% @tasks.each do |task| %>
+        <div class="task", style="border-left: solid 10px <%= task.color %>">
+          <%= image_tag( task.logo ) %>
+          <p><%= task.name.capitalize %></p>
+          <div class="col-">
+            <%= simple_form_for(task, remote: true) do |f| %>
+              <%= button_tag( :class => "btn") do %>
+                <%= image_tag "done.png" %>
+              <% end %>
+            <% end %>
+          </div>
+
   <div data-controller="validate">
     <div class="popup" data-validate-target="validate">
       <h1>Bien joué ! Tu as validé cette tâche !</h1>
@@ -10,6 +30,7 @@
     <div class="bigbigcontainer" data-validate-target="container">
       <div class= "row-">
         <div class="col-sm">
+
 
           <% @tasks.each do |task| %>
             <div class="task", style="border: solid 3px <%= task.color %>">
@@ -33,6 +54,7 @@
     <div class="loutre">
       <%= image_tag("Super_Loutre.png", class: 'SuperLoutre') %>
     </div>
+
     <div class="col-sm">
       <%= render "navbar" %>
     </div>
