@@ -1,9 +1,8 @@
 <%= render "shared/banner" %>
 <div class="container-task">
-      <div class="loutre">
+    <div class="loutre">
         <%= image_tag("Super_Loutre.png") %>
       </div>
-    </div>
     <div class= "row-">
     <div class="col-sm">
       <div data-controller="validate">
@@ -16,7 +15,7 @@
         <div class="bigbigcontainer" data-validate-target="container">
             <div class="col-sm">
               <% @tasks.each do |task| %>
-                <div class="task", style="border: solid 3px <%= task.color %>">
+                <div class="task", style="border-left: solid 10px <%= task.color %>">
                   <%= image_tag( task.logo ) %>
                   <p><%= task.name.capitalize %></p>
                   <div class="col-sm">
@@ -32,6 +31,7 @@
           </div>
         </div>
       </div>
+    </div>
   <div class= "col-sm">
     <div class="col-sm">
       <%= render "navbar" %>
