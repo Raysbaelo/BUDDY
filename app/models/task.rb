@@ -4,7 +4,7 @@ class Task < ApplicationRecord
   validates :name, presence: true
   validates :category, presence: true
 
-  scope :done, -> { joins(:occurances).where(occurances: {done: true, date: Date.today}) }
+  scope :done, -> { joins(:occurances).where(occurances: { done: true, date: Date.today }) }
 
   def done!
     occurances.find_by(date: Date.today).update!(done: true)
@@ -16,7 +16,7 @@ class Task < ApplicationRecord
     when 'sport' then '#F5C44D'
     when 'health' then '#A0E295'
     when 'hobby' then '#FF8954'
-    when 'business' then '#FF5F5F'
+    when 'business' then '#2FC2FF'
     end
   end
 
@@ -27,5 +27,6 @@ class Task < ApplicationRecord
     when 'hobby' then "hobby.png"
     when 'business' then "business.png"
     end
+
   end
 end
