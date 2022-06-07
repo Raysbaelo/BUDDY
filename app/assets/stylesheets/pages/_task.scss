@@ -76,10 +76,10 @@ body {
 
 .loutre img {
   width: 77%;
-  position: fixed;
+  position: absolute;
   top: 103px;
   left: 86px;
-
+  z-index:-2;
 }
 
 .col{
