@@ -1,16 +1,8 @@
 <%= render "shared/banner" %>
-<div class="test">
 
-  <div class="texts">
-    <h3 class="compeleted">
-      Tasks compeleted
-    </h3>
-    <p class="keep">
-      Wow, good job keep it up!</p>
-    <div class="score">
-      <p>5/9</p>
-    </div>
-  </div>
+<div class="test">
+  <div><span class="typed-js" data-controller="typed-js"></span></div>
+
   <div class="nakedloutre">
 
     <div class="progressive">
@@ -18,18 +10,16 @@
     </div>
     <%= image_tag("NakedLoutreHi.gif") %>
   </div>
-
   <div class="progressivebar">
 
     <% current_user.score.each do |category, value| %>
       <%= category %>:
       <progress class="progress-bar" value="<%= value %>" max="100"></progress>
     <% end %>
+
+  </div>
+  <div class="buddybody">
+
   </div>
 
-</div>
-<div class="buddybody">
-
-</div>
-
-<%= render "tasks/navbar" %>
+  <%= render "tasks/navbar" %>

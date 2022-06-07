@@ -1,16 +1,18 @@
-.topnavbar{
+.topnavbar {
   border-top: solid 8px #2A9D8F;
   width: 100vw;
   height: 66px;
   border-radius: 18px;
   display: flex;
   align-items: center;
-  position:fixed;
-  bottom:0px;
+  position: fixed;
+  bottom: 0px;
 
 }
 
-.topnavbar li{
+
+
+.topnavbar li {
   display: inline-block;
   text-decoration: none;
   width: 71px;
@@ -18,11 +20,12 @@
   padding-top: 30px;
   padding-bottom: 50px;
 }
-a{
+
+a {
   border-radius: 50%;
 }
 
-.topnavbar img{
+.topnavbar img {
   width: 51px;
   height: 51px;
   border-radius: 25%;
@@ -30,44 +33,44 @@ a{
   background-color: #2A9D8F;
 }
 
-.topnavbar .text{
+.topnavbar .text {
   width: max-content;
   justify-content: space-evenly;
 }
 
-#home img{
+#home img {
   background-color: #FF5F5F;
 }
 
-#plus img{
+#plus img {
   background-color: #FF8954;
 }
 
-#graph img{
+#graph img {
   background-color: #F5C44D;
 }
 
-#logout img{
+#logout img {
   background-color: #A0E295;
 }
 
 /////// active styles /////
-#home img:active{
+#home img:active {
   transform: rotate(180deg);
   background-color: #6a2929;
 }
 
-#plus img:active{
+#plus img:active {
   transform: rotate(180deg);
   background-color: #80462b;
 }
 
-#graph img:active{
+#graph img:active {
   transform: rotate(90deg);
   background-color: #745c25;
 }
 
-#logout img:active{
+#logout img:active {
   transform: rotate(180deg);
   background-color: #4b6c45;
 }

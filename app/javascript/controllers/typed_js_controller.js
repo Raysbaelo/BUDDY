@@ -5,9 +5,9 @@ export default class extends Controller {
   connect() {
 
     new Typed(this.element, {
-      strings: ["Meet", "your", "BUDDY"],
-      typeSpeed: 40,
-      loop: true
+      strings: ["KEEP GOING ✨ "],
+      typeSpeed: 200,
+      loop: false
     });
   }
 }
