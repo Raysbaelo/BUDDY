@@ -7,7 +7,9 @@ export default class extends Controller {
     console.log(this.validateTarget)
   }
 
-  displayPopup() {
+  displayPopup(event) {
+    console.log("ajax success")
+    // event.preventDefault()
     this.validateTarget.classList.add("active")
     this.containerTarget.classList.add("active")
   }
