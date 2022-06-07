@@ -10,6 +10,7 @@ class Task < ApplicationRecord
     occurances.find_by(date: Date.today).update!(done: true)
   end
 
+
   def color
     case category
     when 'sport' then '#F5C44D'

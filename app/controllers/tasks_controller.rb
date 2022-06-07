@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy];
+  skip_before_action :verify_authenticity_token, only: [:update]
 
 
   def index
@@ -56,4 +57,5 @@ class TasksController < ApplicationController
       Occurance.create!(task: task, date: data, done: false)
     end
   end
+
 end
