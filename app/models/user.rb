@@ -35,4 +35,15 @@ class User < ApplicationRecord
   def number_task_total(category)
     tasks.where(category: category).count + base_score(category)
   end
+
+
+  # graph test
+  def tasks_by_category(category)
+    Occurance.joins(:task).where(tasks: {user_id: id, category: category} ).where("occurances.date <= ?", Date.today).count
+  end
+
+  def tasks_done_by_category(category)
+    Occurance.joins(:task).where(tasks: {user_id: id, category: category}, done: true ).where("occurances.date <= ?", Date.today).count
+  end
+
 end

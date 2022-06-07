@@ -1,7 +1,23 @@
 .h1graph {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
+  margin-bottom: -10px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.h1graph::before {
+  content: "";
+  position: absolute;
+  left: 55%;
+  bottom: 45px;
+  width: 140px;
+  height: 14px;
+  transform: skew(-12deg) translateX(-50%);
+  background: rgba(238,111,87,0.5);
+  z-index: -1;
 }
 
 .row {
@@ -15,4 +31,5 @@
 
 .grey {
   filter: grayscale(1) !important;
+  transform: rotate(360deg);
 }

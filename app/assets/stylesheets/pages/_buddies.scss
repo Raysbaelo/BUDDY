@@ -8,7 +8,7 @@
   color: white;
   font-size: 20px;
   margin: 3%;
-  min-height: 84vh;
+  min-height: 45vh;
   padding: 10px 13px;
   ;
   border-radius: 25px;
@@ -71,6 +71,15 @@
 
 }
 
+.progressive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 2px;
+
+}
+
 
 
 
@@ -78,8 +87,9 @@
 
 
 .nakedloutre img {
-  max-width: 40vh;
-  margin-bottom: 7%;
+
+  max-width: 35vh;
+  margin-bottom: 11%;
 }
 
 .titlebuddy {
