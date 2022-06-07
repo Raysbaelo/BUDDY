@@ -7,8 +7,8 @@
   flex-direction: column-reverse;
   color: white;
   font-size: 20px;
-  margin: 3%;
-  min-height: 45vh;
+  margin: 7%;
+  min-height: 38vh;
   padding: 10px 13px;
   ;
   border-radius: 25px;
@@ -34,6 +34,12 @@
 
   border-radius: 25px;
 
+}
+
+.xp {
+  padding-right: 5%;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .score {
@@ -73,7 +79,7 @@
 
 .progressive {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   margin-top: 5%;
   margin-left: 2px;
@@ -88,7 +94,7 @@
 
 .nakedloutre img {
 
-  max-width: 35vh;
+  max-width: 37vh;
   margin-bottom: 11%;
 }
 
