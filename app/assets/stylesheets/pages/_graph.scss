@@ -4,7 +4,6 @@
   text-align: center;
   padding: 40px;
   margin-bottom: -10px;
-  margin-left: 20px;
   position: relative;
 }
 
@@ -19,17 +18,113 @@
   background: rgba(238,111,87,0.5);
   z-index: -1;
 }
-
-.row {
-  margin-bottom: 50px;
+.colordiv{
+  background-color: #FF4D58;
+  border: 2px solid #FF4D58;
+  border-radius: 20px;
+  height: 415px;
+  width: 390px;
+  padding: 20px;
 }
 
-.col img {
-  width: 70px;
+.whitediv{
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 3px;
+
+}
+#categorytitle{
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+
+.lignesport {
+  margin-top: 14px;
+  margin-bottom: 17px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 10px 10px 10px 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Zen Maru Gothic', sans-serif, 500 !important;
+  box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
+  justify-content: space-evenly;
+  border-left: 10px solid #F5C44D;
+ }
+
+ .lignehealth{
+  margin-top: 14px;
+  margin-bottom: 17px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 10px 10px 10px 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Zen Maru Gothic', sans-serif, 500 !important;
+  box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
+  justify-content: space-evenly;
+  border-left: 10px solid #A0E295;
+ }
+
+
+ .lignehobby{
+  margin-top: 14px;
+  margin-bottom: 17px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 10px 10px 10px 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Zen Maru Gothic', sans-serif, 500 !important;
+  box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
+  justify-content: space-evenly;
+  border-left: 10px solid #FF8954;
+ }
+
+ .lignebusiness{
+  margin-top: 14px;
+  margin-bottom: 17px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 10px 10px 10px 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Zen Maru Gothic', sans-serif, 500 !important;
+  box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
+  justify-content: space-evenly;
+  border-left: 10px solid #2FC2FF;
+ }
+
+.columncat{
+  flex-flow: column wrap;
+}
+.columncat img {
+  width: 50px;
   filter: saturate(3);
 }
 
 .grey {
-  filter: grayscale(1) !important;
+  filter: grayscale(2) !important;
   transform: rotate(360deg);
 }

@@ -31,6 +31,7 @@ a {
   border-radius: 25%;
   padding-bottom: 7px;
   background-color: #2A9D8F;
+  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
 }
 
 .topnavbar .text {
@@ -40,37 +41,45 @@ a {
 
 #home img {
   background-color: #FF5F5F;
+  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
 }
 
 #plus img {
   background-color: #FF8954;
+  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
 }
 
 #graph img {
   background-color: #F5C44D;
+  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
 }
 
 #logout img {
   background-color: #A0E295;
+  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
 }
 
 /////// active styles /////
 #home img:active {
   transform: rotate(180deg);
   background-color: #6a2929;
+  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
 }
 
 #plus img:active {
   transform: rotate(180deg);
   background-color: #80462b;
+  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
 }
 
 #graph img:active {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
   background-color: #745c25;
+  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
 }
 
 #logout img:active {
-  transform: rotate(180deg);
+  transform: rotate(18180deg);
   background-color: #4b6c45;
+  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
 }

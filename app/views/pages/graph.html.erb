@@ -1,127 +1,129 @@
 <%= render "shared/banner" %>
 <div class="container-fluid">
 
-  <div class="row">
-    <div class="col">
-      <h1 class="h1graph">
-        Rewards
-      </h1>
-    </div>
+  <div class="row-title">
+    <h1 class="h1graph">Rewards</h1>
   </div>
 
+  <div class="colordiv">
+    <div class="whitediv">
+        <div class="lignesport">
+              <div class="columncat">
+                <p id="categorytitle">Sport
+                <br>
+                <% current_user.tasks_done_by_category("sport")%>  <% current_user.tasks_by_category("sport")%></p>
+              </div>
+              <div class="columncat">
+                <% if current_user.tasks_done_by_category("sport")>= 10%>
+                <%= image_tag("bronze-medal.png") %>
+                    <% else %>
+                    <%= image_tag("bronze-medal.png", class:"grey") %>
+                    <%end%>
+              </div>
+              <div class="columncat">
+                <% if current_user.tasks_done_by_category("sport")>= 20%>
+                <%= image_tag("silver-medal.png") %>
+                    <% else %>
+                    <%= image_tag("silver-medal.png", class:"grey") %>
+                    <%end%>
+              </div>
+              <div class="columncat">
+                <% if current_user.tasks_done_by_category("sport")>= 30%>
+                <%= image_tag("gold-medal.png") %>
+                    <% else %>
+                    <%= image_tag("gold-medal.png", class:"grey") %>
+                    <%end%>
+              </div>
+          </div>
 
-  <div class="row">
-    <div class="col">
-      <p>Sport</p>
-      <%= current_user.tasks_done_by_category("sport")%> / <%= current_user.tasks_by_category("sport")%>
-    </div>
-        <div class="col">
-          <% if current_user.tasks_done_by_category("sport")>= 10%>
-          <%= image_tag("bronze-medal.png") %>
-              <% else %>
-              <%= image_tag("bronze-medal.png", class:"grey") %>
-              <%end%>
-        </div>
-        <div class="col">
-          <% if current_user.tasks_done_by_category("sport")>= 20%>
-          <%= image_tag("silver-medal.png") %>
-              <% else %>
-              <%= image_tag("silver-medal.png", class:"grey") %>
-              <%end%>
-        </div>
-        <div class="col">
-          <% if current_user.tasks_done_by_category("sport")>= 30%>
-          <%= image_tag("gold-medal.png") %>
-              <% else %>
-              <%= image_tag("gold-medal.png", class:"grey") %>
-              <%end%>
-        </div>
-      </div>
+        <div class="lignehealth">
+            <div class="columncat">
+              <p id="categorytitle">Health
+              <br>
+              <% current_user.tasks_done_by_category("health")%> <% current_user.tasks_by_category("health")%></p>
+            </div>
+            <div class="columncat">
+                  <% if current_user.tasks_done_by_category("health")>= 10%>
+                  <%= image_tag("bronze-medal.png") %>
+                      <% else %>
+                      <%= image_tag("bronze-medal.png", class:"grey") %>
+                      <%end%>
+                </div>
+                <div class="columncat">
+                  <% if current_user.tasks_done_by_category("health")>= 20%>
+                  <%= image_tag("silver-medal.png") %>
+                      <% else %>
+                      <%= image_tag("silver-medal.png", class:"grey") %>
+                      <%end%>
+                </div>
+                <div class="columncat">
+                  <% if current_user.tasks_done_by_category("health")>= 30%>
+                  <%= image_tag("gold-medal.png") %>
+                      <% else %>
+                      <%= image_tag("gold-medal.png", class:"grey") %>
+                      <%end%>
+                </div>
+          </div>
 
-  <div class="row">
-    <div class="col">
-      <p>Health</p>
-      <%= current_user.tasks_done_by_category("health")%> / <%= current_user.tasks_by_category("health")%>
-    </div>
-    <div class="col">
-          <% if current_user.tasks_done_by_category("health")>= 10%>
-          <%= image_tag("bronze-medal.png") %>
-              <% else %>
-              <%= image_tag("bronze-medal.png", class:"grey") %>
-              <%end%>
+        <div class="lignehobby">
+            <div class="columncat">
+              <p id="categorytitle">Hobby
+              <br>
+              <% current_user.tasks_done_by_category("hobby")%>  <% current_user.tasks_by_category("hobby")%></p>
+            </div>
+            <div class="columncat">
+                  <% if current_user.tasks_done_by_category("hobby")>= 10%>
+                  <%= image_tag("bronze-medal.png") %>
+                      <% else %>
+                      <%= image_tag("bronze-medal.png", class:"grey") %>
+                      <%end%>
+                </div>
+                <div class="columncat">
+                  <% if current_user.tasks_done_by_category("hobby")>= 20%>
+                  <%= image_tag("silver-medal.png") %>
+                      <% else %>
+                      <%= image_tag("silver-medal.png", class:"grey") %>
+                      <%end%>
+                </div>
+                <div class="columncat">
+                  <% if current_user.tasks_done_by_category("hobby")>= 30%>
+                  <%= image_tag("gold-medal.png") %>
+                      <% else %>
+                      <%= image_tag("gold-medal.png", class:"grey") %>
+                      <%end%>
+                </div>
         </div>
-        <div class="col">
-          <% if current_user.tasks_done_by_category("health")>= 20%>
-          <%= image_tag("silver-medal.png") %>
-              <% else %>
-              <%= image_tag("silver-medal.png", class:"grey") %>
-              <%end%>
-        </div>
-        <div class="col">
-          <% if current_user.tasks_done_by_category("health")>= 30%>
-          <%= image_tag("gold-medal.png") %>
-              <% else %>
-              <%= image_tag("gold-medal.png", class:"grey") %>
-              <%end%>
-        </div>
+
+        <div class="lignebusiness">
+              <div class="columncat">
+                <p id="categorytitle">Business
+                <br>
+                <% current_user.tasks_done_by_category("business")%> <% current_user.tasks_by_category("business")%></p>
+              </div>
+                <div class="columncat">
+                  <% if current_user.tasks_done_by_category("business")>= 10%>
+                  <%= image_tag("bronze-medal.png") %>
+                      <% else %>
+                      <%= image_tag("bronze-medal.png", class:"grey") %>
+                      <%end%>
+                </div>
+                <div class="columncat">
+                  <% if current_user.tasks_done_by_category("business")>= 20%>
+                  <%= image_tag("silver-medal.png") %>
+                      <% else %>
+                      <%= image_tag("silver-medal.png", class:"grey") %>
+                      <%end%>
+                </div>
+                <div class="columncat">
+                  <% if current_user.tasks_done_by_category("business")>= 30%>
+                  <%= image_tag("gold-medal.png") %>
+                      <% else %>
+                      <%= image_tag("gold-medal.png", class:"grey") %>
+                      <%end%>
+                </div>
+            </div>
+          </div>
   </div>
-
-  <div class="row">
-    <div class="col">
-      <p>Hobby</p>
-      <%= current_user.tasks_done_by_category("hobby")%> / <%= current_user.tasks_by_category("hobby")%>
-    </div>
-    <div class="col">
-          <% if current_user.tasks_done_by_category("hobby")>= 10%>
-          <%= image_tag("bronze-medal.png") %>
-              <% else %>
-              <%= image_tag("bronze-medal.png", class:"grey") %>
-              <%end%>
-        </div>
-        <div class="col">
-          <% if current_user.tasks_done_by_category("hobby")>= 20%>
-          <%= image_tag("silver-medal.png") %>
-              <% else %>
-              <%= image_tag("silver-medal.png", class:"grey") %>
-              <%end%>
-        </div>
-        <div class="col">
-          <% if current_user.tasks_done_by_category("hobby")>= 30%>
-          <%= image_tag("gold-medal.png") %>
-              <% else %>
-              <%= image_tag("gold-medal.png", class:"grey") %>
-              <%end%>
-        </div>
-  </div>
-
-  <div class="row">
-    <div class="col">
-      <p>Business</p>
-      <%= current_user.tasks_done_by_category("business")%> / <%= current_user.tasks_by_category("business")%>
-    </div>
-    <div class="col">
-          <% if current_user.tasks_done_by_category("business")>= 10%>
-          <%= image_tag("bronze-medal.png") %>
-              <% else %>
-              <%= image_tag("bronze-medal.png", class:"grey") %>
-              <%end%>
-        </div>
-        <div class="col">
-          <% if current_user.tasks_done_by_category("business")>= 20%>
-          <%= image_tag("silver-medal.png") %>
-              <% else %>
-              <%= image_tag("silver-medal.png", class:"grey") %>
-              <%end%>
-        </div>
-        <div class="col">
-          <% if current_user.tasks_done_by_category("business")>= 30%>
-          <%= image_tag("gold-medal.png") %>
-              <% else %>
-              <%= image_tag("gold-medal.png", class:"grey") %>
-              <%end%>
-        </div>
-  </div>
-
   <%= render "tasks/navbar" %>
 
 </div>
