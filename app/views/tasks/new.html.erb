@@ -10,12 +10,12 @@
   <div class="bigbigcontainer" data-validate-target="container" >
     <div class="row">
       <div class="col-12 col-xs-6">
-          <h1 id="addtasktitle">Rajoute une tache</h1>
+          <h1 id="addtasktitle">Ajoute une tache</h1>
        <div class="pastequediv">
         <div class="bg-white rounded p-3 shadow">
           <%= simple_form_for @task, remote: true, html: { 'data-action': "ajax:success->validate#displayPopup" }  do |task| %>
           <div class="nameform">
-            <%= task.input :name, :label => 'Nom',:required => false, placeholder: 'Rentre ta tache' %>
+            <%= task.input :name, :label => 'Nom',:required => false, placeholder: 'Ajoute ta tache' %>
           </div>
           <p id="pcategory">Choisie une categorie</p>
           <div class="radiobtn">
@@ -33,4 +33,4 @@
     </div>
   </div>
 </div>
-  <%= render "navbar" %>
+<%= render "navbar" %>

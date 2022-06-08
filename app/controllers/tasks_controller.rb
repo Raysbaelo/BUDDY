@@ -6,7 +6,7 @@ class TasksController < ApplicationController
     @user = current_user
     @task = Task.new
     @tasks = @user.current_tasks
-    @weather = MeteoApiService.new("brazil").call
+    @weather = MeteoApiService.new("Lyon").call
   end
 
   def new
