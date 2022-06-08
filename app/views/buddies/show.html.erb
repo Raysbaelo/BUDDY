@@ -13,12 +13,15 @@
   </div>
 </div>
 <div class="nakedloutre">
-  <%= image_tag("NakedLoutreHi.gif") %>
+  <% if @general_score < 5 %>
+    <%= image_tag("NakedLoutreHi.gif") %>
+  <% else %>
+    <%= image_tag("SuperLoutreFlyingGIF.gif") %>
+  <% end %>
 </div>
 <div class="progressive">
-  <% general_score = current_user.tasks.done.count %>
   <p class="xp">XP</p>
-  <progress class="progress-bar" value="<%= general_score %>" max="18"></progress>
+  <progress class="progress-bar" value="<%= @general_score %>" max="18"></progress>
 </div>
 
 <%= render "tasks/navbar" %>

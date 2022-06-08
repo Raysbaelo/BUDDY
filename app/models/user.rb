@@ -46,4 +46,10 @@ class User < ApplicationRecord
     Occurance.joins(:task).where(tasks: {user_id: id, category: category}, done: true ).where("occurances.date <= ?", Date.today).count
   end
 
+  def tasks_done
+    Occurance.joins(:task).where(tasks: {user_id: id}, done: true ).count
+  end
+
+
+
 end
