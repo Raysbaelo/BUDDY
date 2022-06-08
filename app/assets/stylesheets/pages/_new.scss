@@ -78,6 +78,9 @@
   font-size: 15px;
 }
 
+.form-control{
+  text-align: center;
+}
 
 .radiobtn {
   padding: 15px;
@@ -95,7 +98,6 @@
 }
 
 .radiobtn img {
-
   padding: 8px;
   text-align: center;
   border: 2px solid #EAEAEA;
@@ -150,8 +152,8 @@
   background-color: #FF4D58;
   border: 2px solid #FF4D58;
   border-radius: 20px;
-  height: 109vw;
-  width: 79vw;
+  height: 101vw;
+  width: 72vw;
   margin-left: 8vw;
   padding: 20px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
@@ -162,6 +164,8 @@
     border-radius: 20px !important;
     position: absolute;
     margin-right: 25px;
+    margin-left: -12px;
+    margin-top: -12px;
     background-color:white !important;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
   }

@@ -4,7 +4,7 @@
   text-align: center;
   padding: 40px;
   margin-bottom: -10px;
-  margin-left: 20px;
+  margin-left: -31px;
   position: relative;
 }
 
@@ -32,9 +32,9 @@
   border: 2px solid #FF4D58;
   position: absolute;
   border-radius: 20px;
-  height: 122vw;
-  width: 92vw;
-  padding: 20px;
+  height: 95vw;
+  width: 85vw;
+  padding: 8px;
   margin-left: 15px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
 }
@@ -44,22 +44,22 @@
   position: absolute;
   background-color:white !important;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
-  height: 110vw;
+  height: 90vw;
   width: 80vw;
 }
 .email-input{
   text-align: center;
-  padding: 8px;
+  // padding: 8px;
 }
 
 .password-input{
   text-align: center;
-  padding: 8px;
+  // padding: 8px;
 }
 
-.remember_me{
-  padding: 20px;
-}
+// .remember_me{
+//   padding: 20px;
+// }
 
 .form-actions-{
   display: flex;
@@ -67,19 +67,28 @@
 }
 .btn-{
   font-family: inherit;
-  font-size: inherit;
   line-height: inherit;
   background: #FF4D58 !important;
   border-radius: 20px;
-  padding: 10px;
+  padding: 7px;
   border: 2px solid #FF4D58;
   margin-top: 15px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
   // justify-content: space-between;
 
+}
+.form-label{
+  font-size: 12px;
+}
+
+.form-check-label{
+  font-size: 12px;
+}
+.form-check-label{
+  font-size: 12px;
 }
 
 #user_email {
@@ -94,5 +103,12 @@
 
 #user_password_confirmation{
   width: 68vw;
+  margin-left: 15px;
+}
+.form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.125rem;
   margin-left: 15px;
 }
