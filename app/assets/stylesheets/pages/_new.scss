@@ -41,9 +41,9 @@
 
 #addtasktitle{
   color: black;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
-  padding: 40px;
+  padding: 30px;
   margin-bottom: -10px;
   margin-left: 20px;
   position: relative;
@@ -52,10 +52,10 @@
 #addtasktitle::before {
   content: "";
   position: absolute;
-  left: 55%;
-  bottom: 45px;
-  width: 190px;
-  height: 14px;
+  left: 60%;
+  bottom: 28px;
+  width: 45vw;
+  height: 12px;
   transform: skew(-12deg) translateX(-50%);
   background: rgba(238,111,87,0.5);
   z-index: -1;
@@ -74,18 +74,21 @@
 }
 
 #pcategory{
-  margin-left: 70px;
-  font-size: 20px;
+  margin-left: 30px;
+  font-size: 15px;
 }
 
+
 .radiobtn {
-  padding: 14px;
-  margin-top: -30px;
+  padding: 15px;
+  // margin-top: -30px;
   justify-content: space-evenly;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
+  height: 42vw;
+  width: 57vw;
   text-align: left;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
 
@@ -99,7 +102,7 @@
   border-radius: 25px;
   background-color: white;
   margin: 8px;
-  width: 86px;
+  width: 15vw;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -147,14 +150,14 @@
   background-color: #FF4D58;
   border: 2px solid #FF4D58;
   border-radius: 20px;
-  height: 505px;
-  width: 385px;
+  height: 109vw;
+  width: 79vw;
+  margin-left: 8vw;
   padding: 20px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+}
 
   .bg-white {
-    margin-left: 30px;
-    margin-bottom: -60px;
     border-radius: 20px !important;
     position: absolute;
     margin-right: 25px;
@@ -165,9 +168,9 @@
   .SuperloutreFlying {
     max-width: 50vh;
     position: absolute;
-    right: 40vw;
-    bottom: 8vh;
-    width: 55vw;
+    right: 58vw;
+    bottom: 10vh;
+    width: 45vw;
     &.active {
       visibility: hidden;
     }
@@ -186,7 +189,8 @@
   background: #FF4D58;
   border-radius: 15px;
   padding: 4px 15px;
-  border: 2px solid #FF4D58
+  border: 2px solid #FF4D58;
+  margin-top: 10px
 
 }
 

@@ -25,6 +25,7 @@
   height: 415px;
   width: 390px;
   padding: 20px;
+  position: absolute;
 }
 
 .whitediv{
@@ -115,7 +116,14 @@
   justify-content: space-evenly;
   border-left: 10px solid #2FC2FF;
  }
+ .demiloutrerewards{
+  width: 77%;
+  position: absolute;
+  top: 103px;
+  left: 86px;
+  z-index: -2;
 
+ }
 .columncat{
   flex-flow: column wrap;
 }
