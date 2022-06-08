@@ -2,8 +2,8 @@
   color: black;
   font-size: 40px;
   text-align: center;
-  padding: 40px;
-  margin-bottom: -10px;
+  padding: 5px;
+  // margin-bottom: -10px;
   position: relative;
 }
 
@@ -11,7 +11,7 @@
   content: "";
   position: absolute;
   left: 55%;
-  bottom: 45px;
+  bottom: 9px;
   width: 140px;
   height: 14px;
   transform: skew(-12deg) translateX(-50%);
@@ -22,10 +22,13 @@
   background-color: #FF4D58;
   border: 2px solid #FF4D58;
   border-radius: 20px;
-  height: 415px;
-  width: 390px;
-  padding: 20px;
+  height: 87vw;
+  width: 93vw;
+  padding: 17px;
   position: absolute;
+  margin-top: -10px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
 .whitediv{
@@ -33,11 +36,12 @@
   border: 2px solid white;
   border-radius: 20px;
   padding: 3px;
+  margin-top: -10px;
 
 }
 #categorytitle{
   color: black;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -50,10 +54,9 @@
   background-color: white;
   display: flex;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   font-family: 'Zen Maru Gothic', sans-serif, 500 !important;
   box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
   justify-content: space-evenly;
@@ -69,10 +72,9 @@
   background-color: white;
   display: flex;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   font-family: 'Zen Maru Gothic', sans-serif, 500 !important;
   box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
   justify-content: space-evenly;
@@ -89,10 +91,9 @@
   background-color: white;
   display: flex;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   font-family: 'Zen Maru Gothic', sans-serif, 500 !important;
   box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
   justify-content: space-evenly;
@@ -108,31 +109,34 @@
   background-color: white;
   display: flex;
   align-items: center;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   font-family: 'Zen Maru Gothic', sans-serif, 500 !important;
   box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
   justify-content: space-evenly;
   border-left: 10px solid #2FC2FF;
  }
- .demiloutrerewards{
-  width: 77%;
+
+ .demiloutrerewards {
+  max-width: 50vh;
+  width: 77vw;
+  height: 50vw;
   position: absolute;
   top: 103px;
   left: 86px;
   z-index: -2;
 
  }
-.columncat{
-  flex-flow: column wrap;
-}
-.columncat img {
-  width: 50px;
-  filter: saturate(3);
-}
+  .columncat{
+    flex-flow: column wrap;
+  }
+  .columncat img {
+    width: 10vw;
+    filter: saturate(3);
+  }
 
 .grey {
   filter: grayscale(2) !important;
   transform: rotate(360deg);
-}
+  }

@@ -1,11 +1,10 @@
 <%= render "shared/banner" %>
 <div class="container-fluid">
 
-  <div class="row-title">
-    <h1 class="h1graph">Rewards</h1>
-  </div>
-    <div class="divloutrereward">
-    <div class="demiloutrereward"> <%= image_tag("SLtopgif.gif", size: "200") %></div>
+  <%# <div class="row-title"> %>
+    <h1 class="h1graph">Trophées</h1>
+  <%# </div> %>
+      <%= image_tag("SLtopgif.gif", class:"demiloutrereward", size: "120") %>
     <div class="colordiv">
       <div class="whitediv">
           <div class="lignesport">
@@ -39,7 +38,7 @@
 
           <div class="lignehealth">
               <div class="columncat">
-                <p id="categorytitle">Health
+                <p id="categorytitle">Santé
                 <br>
                 <% current_user.tasks_done_by_category("health")%> <% current_user.tasks_by_category("health")%></p>
               </div>
@@ -124,7 +123,6 @@
                   </div>
               </div>
             </div>
-    </div>
     </div>
 </div>
   <%= render "tasks/navbar" %>
