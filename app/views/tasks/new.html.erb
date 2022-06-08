@@ -4,32 +4,31 @@
     <h1>Tâche ajoutée !</h1>
     <h2>Belle motivation ! une étape de passée, on continue comme ça ! </h2>
     <%= link_to tasks_path do %>
-      <%=  image_tag("SuperloutreWelldone.png", size: "200") %>
+      <%=  image_tag("SLwdgif.gif", size: "200") %>
     <% end %>
   </div>
   <div class="bigbigcontainer" data-validate-target="container" >
     <div class="row">
       <div class="col-12 col-xs-6">
-          <h1 id="addtasktitle">Add a task</h1>
+          <h1 id="addtasktitle">Rajoute une tache</h1>
        <div class="pastequediv">
         <div class="bg-white rounded p-3 shadow">
           <%= simple_form_for @task, remote: true, html: { 'data-action': "ajax:success->validate#displayPopup" }  do |task| %>
           <div class="nameform">
-            <%= task.input :name, :label => 'Name',:required => false, placeholder: 'Add your task' %>
+            <%= task.input :name, :label => 'Nom',:required => false, placeholder: 'Rentre ta tache' %>
           </div>
-          <p id="pcategory">Choose a category</p>
+          <p id="pcategory">Choisie une categorie</p>
           <div class="radiobtn">
             <%= task.collection_radio_buttons(:category, [['sport','sport'] ,['health', 'health'], ['business', 'business'] ,['hobby','hobby']], :first, :last) do |b| %>
             <%= b.label(:class => "#{b.text}_collection_radio_buttons") { b.radio_button + image_tag(b.text+'.png') } %>
             <% end %>
           </div>
           <div class="twobtn">
-            <%= task.submit class: "creatbtn", :value => 'Create', data: { disable_with: false }%>
+            <%= task.submit class: "creatbtn", :value => 'Créer', data: { disable_with: false }%>
             <% end %>
           </div>
         </div>
-        </div>
-        <%= image_tag("SuperloutreFlying.png", class: "SuperloutreFlying" )  %>
+        <%= image_tag("SLflygif.gif", class: "SuperloutreFlying" )  %>
       </div>
     </div>
   </div>
