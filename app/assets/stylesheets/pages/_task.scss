@@ -73,15 +73,6 @@ body {
 
 }
 
-
-.loutre img {
-  width: 77%;
-  position: absolute;
-  top: 103px;
-  left: 86px;
-  z-index:-2;
-}
-
 .col{
  width: 100%;
  height: 60%;
@@ -126,7 +117,14 @@ body {
   height: 504px;
   border:solid  1em #FF5F5F;
   border-radius: 2em ;
+}
 
+.loutre img {
+  width: 77%;
+  position: absolute;
+  top: 103px;
+  left: 86px;
+  z-index:-2;
 }
 
 .btn{

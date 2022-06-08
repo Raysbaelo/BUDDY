@@ -21,17 +21,6 @@
   }
 }
 
-.SuperloutreFlying {
-  max-width: 50vh;
-  margin-top: 20%;
-  position: absolute;
-  right: 95px;
-  bottom: 65px;
-
-  &.active {
-    visibility: hidden;
-  }
-}
 
 .croix {
   position: relative;
@@ -101,14 +90,15 @@
 }
 
 .radiobtn img {
-  padding: 9px 5px 15px 5px;
+
+  padding: 8px;
   text-align: center;
   border: 2px solid #EAEAEA;
   border-radius: 25px;
   background-color: white;
   margin: 8px;
-  height: 100px;
-  width: 100px;
+  /* height: 100px; */
+  width: 86px;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -132,8 +122,8 @@
   background-color: #FF8954;
 }
 
-  #task_category_health   {
-    visibility: hidden;
+#task_category_health   {
+  visibility: hidden;
   }
 
   #task_category_health  {
@@ -142,7 +132,7 @@
 
   #task_category_sport {
     visibility: hidden;
-}
+  }
 
   #task_category_business {
     visibility: hidden;
@@ -153,16 +143,26 @@
   }
 
 
-.bg-white {
-  margin-left: 30px;
-  margin-bottom: -60px;
-  border-radius: 20px !important;
-  position: absolute;
-  margin-right: 25px;
-  background-color:white !important;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
-}
+  .bg-white {
+    margin-left: 30px;
+    margin-bottom: -60px;
+    border-radius: 20px !important;
+    position: absolute;
+    margin-right: 25px;
+    background-color:white !important;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+  }
 
+  .SuperloutreFlying {
+    max-width: 50vh;
+    position: absolute;
+    right: 40vw;
+    bottom: 8vh;
+    width: 55vw;
+    &.active {
+      visibility: hidden;
+    }
+  }
 
 .twobtn {
   display: flex;
@@ -175,9 +175,9 @@
   font-size: inherit;
   line-height: inherit;
   background: #FF4D58;
-  border-radius: 20px;
-  padding: 10px;
-  border: 2px solid #FF4D58;
+  border-radius: 15px;
+  padding: 4px 15px;
+  border: 2px solid #FF4D58
 
 }
 

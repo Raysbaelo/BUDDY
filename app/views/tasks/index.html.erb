@@ -1,7 +1,7 @@
 <%= render "shared/banner" %>
 <div class="container-task">
     <div class="loutre">
-        <%= image_tag("Super_Loutre.png") %>
+        <%= image_tag("SLtopgif.gif") %>
       </div>
     <div class= "row-">
     <div class="col-sm">
@@ -9,8 +9,9 @@
         <div class="popup" data-validate-target="validate">
           <h1>Bien joué ! Tu as validé cette tâche !</h1>
           <h2>C'est en avançant petit à petit qu'on fait de grandes choses, continues comme ça !</h2>
-          <a class ="croix" href="" data-action="click->validate#hidePopup">X</a>
-          <%=  image_tag("SuperloutreWelldone.png", size: "200") %>
+          <%= link_to tasks_path do %>
+            <%=  image_tag("SLwdgif.gif", size: "200") %>
+          <% end %>
         </div>
         <div class="bigbigcontainer" data-validate-target="container">
             <div class="col-sm">

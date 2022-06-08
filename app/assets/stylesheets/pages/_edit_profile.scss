@@ -15,6 +15,10 @@
   margin-top: 0;
 }
 
+.bannerquestions p {
+  font-size: 20px;
+}
+
 .bannerquestions h1::before {
   content: "";
   position: absolute;
@@ -27,9 +31,6 @@
   z-index: -1;
 }
 
-.bannerquestions p {
-  font-size: 14px;
-}
 
 .options {
   display: flex;
