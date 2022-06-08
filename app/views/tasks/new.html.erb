@@ -11,6 +11,7 @@
     <div class="row">
       <div class="col-12 col-xs-6">
           <h1 id="addtasktitle">Add a task</h1>
+       <div class="pastequediv">
         <div class="bg-white rounded p-3 shadow">
           <%= simple_form_for @task, remote: true, html: { 'data-action': "ajax:success->validate#displayPopup" }  do |task| %>
           <div class="nameform">
