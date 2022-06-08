@@ -24,11 +24,11 @@
 	border-radius: 50%;
 	box-shadow: rgba(255,255,0,0.2) 0 0 0 15px;
 	content: '';
-	height: 73px;
-  width: 73px;
+	height: 70px;
+  width: 70px;
   position: absolute;
   left: 129px;
-  top: 16px;
+  top: 8px;
 }
 
 .rainy {
@@ -44,22 +44,22 @@
 	display: block;
 	height: 50px;
 	width: 50px;
-	margin-left: -15px;
-  position: absolute;
-  left: 150px;
-  top: 6px;
+	margin-left: -60px;
+	position: absolute;
+	left: 296px;
+	top: 52px;
 }
 .rainy:after {
 	animation: rainy_shadow 5s ease-in-out infinite 1s;
 	background: #000000;
 	border-radius: 50%;
 	content: '';
-	height: 73px;
-  width: 73px;
-  position: absolute;
-  left: 129px;
-  top: 16px;
+	height: 15px;
+	width: 1O0px;
 	opacity: 0.2;
+	position: absolute;
+	left: 5px;
+	bottom: -60px;
 	transform: scale(.7);
 }
 .rainy:before {
