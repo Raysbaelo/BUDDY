@@ -12,18 +12,18 @@
     <br>
   </div>
 </div>
-<div class="cloudcontainer">
-  <div class="cloud">
-    <%= image_tag("cloud.png") %>
-    <div class="loutrekiss">
-      <%= image_tag("SLkissgif.gif") %>
-    </div>
-  </div>
-  <div class="progressive">
-    <% general_score = current_user.tasks.done.count %>
-    <p class="xp">XP</p>
-    <progress class="progress-bar" value="<%= general_score %>" max="18"></progress>
-  </div>
+
+<div class="nakedloutre">
+  <% if @general_score < 5 %>
+    <%= image_tag("NakedLoutreHi.gif") %>
+  <% else %>
+    <%= image_tag("SuperLoutreFlyingGIF.gif") %>
+  <% end %>
+</div>
+<div class="progressive">
+  <p class="xp">XP</p>
+  <progress class="progress-bar" value="<%= @general_score %>" max="18"></progress>
+
 </div>
 
 <%= render "tasks/navbar" %>
