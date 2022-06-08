@@ -1,6 +1,7 @@
 .test {
+
   min-height: 40vh;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -8,27 +9,20 @@
   color: white;
   font-size: 20px;
   margin: 7%;
-  min-height: 38vh;
+  min-height: 36vh;
   padding: 10px 13px;
-  ;
   border-radius: 25px;
-  box-shadow: rgba(22, 17, 17, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  background: linear-gradient(115deg, rgba(255, 149, 150, 1) 3%, rgba(244, 118, 120, 1) 16%, rgba(239, 102, 104, 1) 27%, rgba(244, 65, 68, 0.9612438725490196) 46%, rgba(236, 98, 100, 1) 62%, rgba(239, 125, 127, 1) 74%, rgba(255, 140, 141, 1) 87%, rgba(247, 187, 188, 1) 96%, rgba(255, 187, 188, 1) 96%, rgba(255, 185, 185, 1) 98%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background: linear-gradient(115deg, #ff9596 3%, #f47678 16%, #ef6668 27%, rgba(244, 65, 68, 0.961244) 46%, #ec6264 62%, #ef7d7f 74%, #ff8c8d 87%, #f7bbbc 96%, #ffbbbc 96%, #ffb9b9 98%);
 }
 
-.typed-js {
-  font-size: 30px;
-}
+
+
 .cloudcontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.cloud img {
-  position: relative;
-  width: 65vw;
-
 }
 
 .loutrekiss img {
@@ -40,15 +34,15 @@
 }
 
 .xp {
-  padding-right: 5%;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
+  align-self: center;
+  margin: 5%;
 }
 
 .score {
   background-color: rgb(255, 255, 255);
   border: 0.5px solid rgb(214, 214, 214);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 10px 20px;
   border-radius: 5px;
   color: black;
@@ -82,23 +76,33 @@
 
 .progressive {
   display: flex;
-  align-items: baseline;
+  margin-bottom: 3vh;
+  align-items: center;
   justify-content: center;
-  margin-top: 5%;
-  margin-left: 2px;
-
+  margin-top: 6%;
+  border: 0.3px solid #a7a7a7;
+  margin-left: 12vh;
+  width: 34vh;
+  border-radius: 11px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /* margin-left: 2px; */
+  /* background: linear-gradient(115deg, #ff9596 3%, #f47678 16%, #ef6668 27%, rgba(244, 65, 68, 0.961244) 46%, #ec6264 62%, #ef7d7f 74%, #ff8c8d 87%, #f7bbbc 96%, #ffbbbc 96%, #ffb9b9 98%); */
 }
 
 
 
 
 
+.nakedloutre {
+  display: flex;
+  flex-direction: column;
+}
 
 
 .nakedloutre img {
+  max-width: 41vh;
 
-  max-width: 37vh;
-  margin-bottom: 11%;
+  align-self: center;
 }
 
 .titlebuddy {
@@ -107,33 +111,72 @@
   margin-bottom: 15%;
 }
 
+
+
+
+
+
 .progress-bar {
   border-radius: 30px;
-  height: 8px;
-  border: 0.5px solid #2c2c2c;
+  border: 0.7px solid #2c2c2c;
   margin-top: 5px;
+
+  &.xp-bar {
+    height: 16px;
+    border: 1px solid #2c2c2c;
+
+    &::-webkit-progress-bar {
+      background: rgb(255, 255, 255);
+    }
+
+    &::-webkit-progress-value {
+      background: rgb(243, 184, 35);
+    }
+  }
+
+  &.category-bar {
+    height: 8px;
+
+    &::-webkit-progress-bar {
+      background: rgb(255, 255, 255);
+    }
+
+    &::-webkit-progress-value {
+      background: rgb(122, 255, 95);
+    }
+  }
 }
 
-progress {
-  color: lightblue;
-}
 
-progress::-moz-progress-bar {
-  background: lightcolor;
+.blackhole {
+  width: 32%;
 }
-
-progress::-webkit-progress-value {
-  background: rgb(80, 227, 99);
-}
-
-progress::-webkit-progress-bar {
-  background: rgb(255, 255, 255);
-}
-
 
 .buddybody {
   display: flex;
   align-items: baseline;
   justify-content: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* background: */
+  // progress::-webkit-progress-bar {background-color: black; width: 100%;}
+  // progress {background-color: black;}
+
+  // /* value: */
+  // progress::-webkit-progress-value {background-color: green !important;}
+  // progress::-moz-progress-bar {background-color: green !important;}
+  // progress {color: green;}
+
 
 }
