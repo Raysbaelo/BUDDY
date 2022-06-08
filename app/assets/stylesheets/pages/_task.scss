@@ -115,18 +115,16 @@ body {
 //   height: 20px;
 // }
 .row-{
-  position: fixed;
-  top: 232px;
+  margin-top: 153px;
   background-color: white;
   padding: 6px;
   border-radius: 10px;
   overflow-y: scroll;
   width: 90vw;
   margin-left: 20px;
-  height: 504px;
-  border:solid  1em #FF5F5F;
-  border-radius: 2em ;
-
+  height: 364px;
+  border: solid 1em #FF5F5F;
+  border-radius: 2em;
 }
 
 .btn{

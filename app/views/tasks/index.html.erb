@@ -1,18 +1,26 @@
 <%= render "shared/banner" %>
 <div class="container-task">
-    <div class="loutre">
-        <%= image_tag("Super_Loutre.png") %>
-      </div>
-    <div class= "row-">
-    <div class="col-sm">
-      <div data-controller="validate">
-        <div class="popup" data-validate-target="validate">
-          <h1>Bien joué ! Tu as validé cette tâche !</h1>
-          <h2>C'est en avançant petit à petit qu'on fait de grandes choses, continues comme ça !</h2>
-          <a class ="croix" href="" data-action="click->validate#hidePopup">X</a>
-          <%=  image_tag("SuperloutreWelldone.png", size: "200") %>
-        </div>
-        <div class="bigbigcontainer" data-validate-target="container">
+  <div class="weather">
+    <%if @weather.downcase.include?("rain") %>
+      <div class="rainy"></div>
+    <% elsif%>
+      <% @weather.downcase.include?("sun") %>
+      <div class="sunny"></div>
+    <% end %>
+  </div>
+  <div class="loutre">
+      <%= image_tag("Super_Loutre.png") %>
+    </div>
+      <div class= "row-">
+        <div class="col-sm">
+          <div data-controller="validate">
+          <div class="popup" data-validate-target="validate">
+            <h1>Bien joué ! Tu as validé cette tâche !</h1>
+            <h2>C'est en avançant petit à petit qu'on fait de grandes choses, continues comme ça !</h2>
+            <a class ="croix" href="" data-action="click->validate#hidePopup">X</a>
+            <%=  image_tag("SuperloutreWelldone.png", size: "200") %>
+          </div>
+          <div class="bigbigcontainer" data-validate-target="container">
             <div class="col-sm">
               <% @tasks.each do |task| %>
                 <div class="task", style="border-left: solid 10px <%= task.color %>">
@@ -32,9 +40,5 @@
         </div>
       </div>
     </div>
-  <div class= "col-sm">
-    <div class="col-sm">
-      <%= render "navbar" %>
-    </div>
-  </div>
 </div>
+    <%= render "navbar" %>
