@@ -1,5 +1,5 @@
 .task img {
-  height: 30px;
+  height: 28px;
 }
 
 .popup {
@@ -53,12 +53,12 @@
   box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
 }
 
-#bin img {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-self: center;
-}
+// #bin img {
+//   width: 40px;
+//   height: 40px;
+//   display: flex;
+//   align-self: center;
+// }
 
 
 body {
@@ -67,10 +67,9 @@ body {
 }
 
 .task p {
-  text-align: center;
-  padding-left: 10px;
+  padding-left: 17px;
+  padding-top: 11px;
   font-size: 17px;
-
 }
 
 .col {
@@ -83,11 +82,11 @@ body {
   height: 35px;
 }
 
-.row-img {
+// .row-img {
 
-  width: 43px;
-  height: 43px;
-}
+//   width: 43px;
+//   height: 43px;
+// }
 
 
 .bigbigcontainer {
@@ -105,7 +104,7 @@ body {
   width: 90vw;
   margin-left: 20px;
   height: 364px;
-  border: solid 1em #FF5F5F;
+  border: solid 1em #EB5C5E;
   border-radius: 2em;
 }
 
@@ -122,4 +121,12 @@ body {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
+}
+
+body{
+  background-image: url("achievmentmontains") ;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 30%;
+
 }
