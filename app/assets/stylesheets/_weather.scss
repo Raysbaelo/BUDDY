@@ -27,20 +27,21 @@
 	height: 70px;
   width: 70px;
   position: absolute;
-  left: 129px;
-  top: 8px;
+  left: 144px;
+  top: 14px;
 }
+
 
 .rainy {
 	animation: rainy 5s ease-in-out infinite 1s;
-	background: #CCCCCC;
+	background: #a0a1a1;
 	border-radius: 50%;
 	box-shadow:
-		#CCCCCC 65px -15px 0 -5px,
-		#CCCCCC 25px -25px,
-		#CCCCCC 30px 10px,
-		#CCCCCC 60px 15px 0 -10px,
-		#CCCCCC 85px 5px 0 -5px;
+		#a0a1a1 65px -15px 0 -5px,
+		#a0a1a1 25px -25px,
+		#a0a1a1 30px 10px,
+		#a0a1a1 60px 15px 0 -10px,
+		#a0a1a1 85px 5px 0 -5px;
 	display: block;
 	height: 50px;
 	width: 50px;
@@ -65,7 +66,7 @@
 .rainy:before {
 	animation: rainy_rain .7s infinite linear;
 	content: '';
-	background: #CCCCCC;
+	background: #a0a1a1;
 	border-radius: 50%;
 	display: block;
 	height: 6px;
@@ -168,4 +169,81 @@
 			#000 110px 45px,
 			#000 90px 35px;
 	}
+}
+
+.cloudy {
+	animation: cloudy 5s ease-in-out infinite;
+	background: #c5c6c6;
+	border-radius: 50%;
+	box-shadow:
+		#c5c6c6 65px -15px 0 -5px,
+		#c5c6c6 25px -25px,
+		#c5c6c6 30px 10px,
+		#c5c6c6 60px 15px 0 -10px,
+		#c5c6c6 85px 5px 0 -5px;
+	height: 50px;
+	width: 50px;
+	margin-left: -27px;
+  position: absolute;
+  left: 269px;
+  top: 43px;
+}
+.cloudy:after {
+	animation: cloudy_shadow 5s ease-in-out infinite;
+	background: #000000;
+	border-radius: 50%;
+	content: '';
+	height: 15px;
+	width: 120px;
+	opacity: 0.2;
+	position: absolute;
+	left: 5px;
+	bottom: -60px;
+  transform: scale(.7);
+}
+@keyframes cloudy {
+	50% { transform: translateY(-20px); }
+}
+@keyframes cloudy_shadow {
+	50% { transform: translateY(20px) scale(1); opacity:.05; }
+}
+
+.rainbow {
+	animation: rainbow 5s ease-in-out infinite;
+	border-radius: 170px 0 0 0;
+	box-shadow:
+		#FB323C -2px -2px 0 1px,
+		#F99716 -4px -4px 0 3px,
+		#FEE124 -6px -6px 0 5px,
+		#AFDF2E -8px -8px 0 7px,
+		#6AD7F8 -10px -10px 0 9px,
+		#60B1F5 -12px -12px 0 11px,
+		#A3459B -14px -14px 0 13px;
+	height: 70px;
+	width: 70px;
+	margin-left: -40px;
+	position: absolute;
+	left: 610px;
+	top: 71px;
+  	transform: rotate(40deg);
+}
+.rainbow:after {
+	animation: rainbow_shadow 5s ease-in-out infinite;
+	background: #000000;
+	border-radius: 50%;
+	content: '';
+	opacity: 0.2;
+	height: 15px;
+	width: 120px;
+	position: absolute;
+	bottom: -23px;
+	left: 17px;
+  	transform: rotate(-40deg);
+  	transform-origin: 50% 50%;
+}
+@keyframes rainbow {
+	50% { transform: rotate(50deg); }
+}
+@keyframes rainbow_shadow {
+	50% { transform:  rotate(-50deg) translate(10px) scale(.7); opacity: 0.05; }
 }

@@ -6,6 +6,9 @@
     <% elsif%>
       <% @weather.downcase.include?("sun") %>
       <div class="sunny"></div>
+    <% else %>
+      <% @weather.downcase.include?("cloud") %>
+      <div class="cloudy"></div>
     <% end %>
   </div>
   <div class="loutreindex">
@@ -44,6 +47,7 @@
           </div>
         </div>
       </div>
+
     </div>
 </div>
     <%= render "navbar" %>

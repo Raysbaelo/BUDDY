@@ -89,6 +89,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  background-image: white;
+  background-size: cover;
   height: 43vw;
   width: 61vw;
   border-radius: 20px;
@@ -97,7 +99,7 @@
 }
 
 .radiobtn img {
-  padding: 4%;
+  padding: 12px;
   text-align: center;
   border-radius: 16px;
   background-color: white;
@@ -165,7 +167,6 @@
   margin-left: -5%;
 
   margin-top: -4%;
-
   background-color: white !important;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
 }
