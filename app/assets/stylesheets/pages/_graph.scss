@@ -14,12 +14,13 @@
   width: 40%;
   height: 17%;
   transform: skew(-12deg) translateX(-50%);
-  background: rgba(238,111,87,0.5);
+  background: rgba(238, 111, 87, 0.5);
   z-index: -1;
 }
-.colordiv{
+
+.colordiv {
   background-color: #EB5C5E;
-  border: 2px solid #EB5C5E;
+
   border-radius: 20px;
   height: 89vw;
   width: 93vw;
@@ -28,9 +29,10 @@
   margin-top: -5%;
   padding-right: 2%;
   padding-left: 2%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.whitediv{
+.whitediv {
   background-color: white;
   border: 2px solid white;
   border-radius: 20px;
@@ -38,7 +40,8 @@
   margin-top: -3%;
 
 }
-#categorytitle{
+
+#categorytitle {
   color: black;
   font-size: 15px;
   text-align: center;
@@ -60,9 +63,9 @@
   box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
   justify-content: space-evenly;
   border-left: 10px solid #F5C44D;
- }
+}
 
- .lignehealth{
+.lignehealth {
   margin-top: 4%;
   margin-bottom: 5%;
   margin-left: 3%;
@@ -78,10 +81,10 @@
   box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
   justify-content: space-evenly;
   border-left: 10px solid #A0E295;
- }
+}
 
 
- .lignehobby{
+.lignehobby {
   margin-top: 4%;
   margin-bottom: 5%;
   margin-left: 3%;
@@ -97,9 +100,9 @@
   box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
   justify-content: space-evenly;
   border-left: 10px solid #FF8954;
- }
+}
 
- .lignebusiness{
+.lignebusiness {
   margin-top: 4%;
   margin-bottom: 5%;
   margin-left: 3%;
@@ -115,9 +118,9 @@
   box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 8px !important;
   justify-content: space-evenly;
   border-left: 10px solid #2FC2FF;
- }
+}
 
- .demiloutrerewards {
+.demiloutrerewards {
   max-width: 50vh;
   width: 77vw;
   height: 50vw;
@@ -126,16 +129,18 @@
   left: 86px;
   z-index: -2;
 
- }
-  .columncat{
-    flex-flow: column wrap;
-  }
-  .columncat img {
-    width: 10vw;
-    filter: saturate(3);
-  }
+}
+
+.columncat {
+  flex-flow: column wrap;
+}
+
+.columncat img {
+  width: 10vw;
+  filter: saturate(3);
+}
 
 .grey {
   filter: grayscale(2) !important;
   transform: rotate(360deg);
-  }
+}
