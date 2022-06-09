@@ -1,8 +1,8 @@
 <div class="maintitle"><h2>Connecte toi</h2></div>
 <div class="demiloutre"> <%= image_tag("SLtopgif.gif", size: "120") %></div>
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="pastequeform">
-      <div class="form-inputs-">
+    <div class="pastequeformlogin">
+      <div class="form-inputslogin">
         <div class="email-input">
           <%= f.input :email,
                       required: false,
