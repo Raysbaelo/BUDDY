@@ -3,7 +3,6 @@ class BuddiesController < ApplicationController
 
   def show
     @user = User.all
-    @general_score = current_user.tasks.done.count
   end
 
 

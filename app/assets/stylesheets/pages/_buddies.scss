@@ -100,15 +100,21 @@
 
 
 .nakedloutre {
-  display: flex;
-  flex-direction: column;
+  margin-left: 20vw;
+  height: 44vw;
+  width: 60vw;
 }
 
 
 .nakedloutre img {
-  max-width: 43vh;
-
+  max-width: 41vh;
+  width: 80vw;
   align-self: center;
+}
+
+.belleloutre {
+  margin-left: 30vw;
+
 }
 
 .titlebuddy {
@@ -156,6 +162,7 @@
 
 .blackhole {
   width: 32%;
+  margin-left: 34vw;
 }
 
 .buddybody {

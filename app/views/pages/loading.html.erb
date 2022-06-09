@@ -2,7 +2,11 @@
 
   <%= link_to tasks_path do %>
     <div class= "cloudbuddy">
-      <%= image_tag "SLflygif.gif", class: "superloutre" %>
+      <% if @general_score < 5 %>
+        <%= image_tag 'NakedLoutreHi.gif', class: "superloutre"  %>
+      <% else %>
+        <%= image_tag "SLflygif.gif", class: "superloutre2", size: "160"  %>
+      <% end %>
     </div>
   <% end %>
 </div>

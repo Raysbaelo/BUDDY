@@ -28,4 +28,18 @@
   </div>
 </div>
 
+<div>
+  <% if @general_score < 5 %>
+    <%= image_tag 'nakedloutrelandinggif.gif', size: "160", class: "nakedloutre" %>
+  <% else %>
+    <%= image_tag "SLkissgif.gif", size: "160", class: "belleloutre" %>
+  <% end %>
+</div>
+<%= image_tag'blackhole.png',class: 'blackhole', size: "20" %>
+<div class="progressive">
+  <p class="xp">XP</p>
+  <progress class="progress-bar xp-bar" value="<%= @general_score %>" max="18"></progress>
+
+</div>
+
 <%= render "tasks/navbar" %>
