@@ -34,12 +34,20 @@ a {
 .topnavbar img {
   width: 43px;
   height: 41px;
+  padding: 7px;
   border-radius: 25%;
   background-color: #2A9D8F;
   // box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 
   margin: 4px;
+}
+
+.iconloutre img {
+  padding: 0px !important;
+  width: 47px;
+  height: 44px;
+
 }
 
 #home img {

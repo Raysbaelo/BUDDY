@@ -2,28 +2,28 @@
   <div class="text">
     <div id=home class="icon">
       <%= link_to tasks_path do %>
-      <%= image_tag("home.png") %>
+        <%= image_tag("home.png") %>
       <% end %>
     </div>
     <div id=plus class="icon">
       <%= link_to new_task_path do %>
-      <%= image_tag("plus.png") %>
+        <%= image_tag("plus.png") %>
       <% end %>
     </div>
-    <div class="icon">
+    <div class="icon iconloutre">
       <%= link_to buddy_path(@current_user) do %>
-      <%= image_tag("loutretete.jpg") %>
+        <%= image_tag("loutretete.jpg") %>
       <% end %>
     </div>
     <div id=graph class="icon">
       <%= link_to graph_path do %>
-      <%= image_tag("graph.png") %>
+        <%= image_tag("graph.png") %>
       <% end %>
     </div>
     <div id=logout class="icon">
       <%= link_to destroy_user_session_path, method: :delete do %>
-      <%= image_tag("logout.png") %>
+        <%= image_tag("logout.png") %>
       <% end %>
     </div>
   </div>
- </div>
+</div>
