@@ -104,8 +104,12 @@ body {
   width: 90vw;
   margin-left: 20px;
   height: 364px;
-  border: solid 1em #EB5C5E;
+  border: solid 3vw #EB5C5E;
   border-radius: 2em;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .loutreindex img {
