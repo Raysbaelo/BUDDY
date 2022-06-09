@@ -36,17 +36,74 @@ a {
 .superloutre {
   transform: translate(0, 20px);
   width: 285px;
-  margin-bottom: 7vh;
+  margin-bottom: 1vh;
   margin-left: 4vw;
 }
 
 
 .superloutre2 {
   transform: translate(0, 20px);
-  width: 285px;
-  margin-bottom: 7vh;
+  width: 40%;
+  margin-bottom: 1vh;
   margin-left: 4vw;
 }
+
+
+
+.relative {
+  width: fit-content;
+  text-align: center;
+}
+
+
+
+.superloutre2 {
+  animation-name: bobbingAnim;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  -webkit-animation-name: bobbingAnim;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+}
+
+
+@keyframes bobbingAnim {
+  0% {
+    transform: translate(0px, -30px);
+    animation-timing-function: ease-in-out
+  }
+
+  50% {
+    transform: translate(0px, -15px);
+    animation-timing-function: ease-in-out
+  }
+
+  100% {
+    transform: translate(0px, -30px);
+    animation-timing-function: ease-in-out
+  }
+}
+
+@-webkit-keyframes bobbingAnim {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    -webkit-animation-timing-function: ease-in-out
+  }
+
+  50% {
+    -webkit-transform: translate(0px, 12px);
+    -webkit-animation-timing-function: ease-in-out
+  }
+
+  100% {
+    -webkit-transform: translate(0px, 0px);
+    -webkit-animation-timing-function: ease-in-out
+  }
+}
+
+
 
 
 

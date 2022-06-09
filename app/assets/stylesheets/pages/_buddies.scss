@@ -1,6 +1,6 @@
 .test {
 
-  min-height: 40vh;
+
   background-color: white;
   display: flex;
   justify-content: space-evenly;
@@ -12,7 +12,7 @@
   padding: 10px 42px;
   border-radius: 21px;
   background: linear-gradient(115deg, #ff9596 3%, #f47678 16%, #ef6668 27%, rgba(244, 65, 68, 0.961244) 46%, #ec6264 62%, #ef7d7f 74%, #ff8c8d 87%, #f7bbbc 96%, #ffbbbc 96%, #ffb9b9 98%);
-  min-height: 33vh;
+  min-height: 29vh;
   background-image: url('backgroundgrad.png');
   background-size: cover;
   background-position: center;
@@ -148,7 +148,7 @@
 
     &::-webkit-progress-value {
 
-      background: rgb(35, 129, 243);
+      background: #4195c4;
     }
   }
 
