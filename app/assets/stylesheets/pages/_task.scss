@@ -83,7 +83,9 @@ body {
 
 .row- {
   margin-top: 21vh;
-  background-color: white;
+  // background-color: white;
+  background-image: url("papierpeint11.jpg") !important;
+  background-size: cover;
   padding: 6px;
   border-radius: 10px;
   overflow-y: scroll;
@@ -100,7 +102,6 @@ body {
 }
 
 .loutreindex img {
-
   position: absolute;
   top: 13%;
   left: 10%;

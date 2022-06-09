@@ -1,18 +1,25 @@
 .h1graph {
+  // color: black;
+  // font-size: 25px;
+  // text-align: center;
+  // padding: 2%;
+  // position: relative;
   color: black;
-  font-size: 40px;
+  font-size: 25px;
   text-align: center;
-  padding: 2%;
+  padding: 9%;
+  margin-bottom: -2%;
+  margin-left: -5%;
   position: relative;
 }
 
 .h1graph::before {
   content: "";
   position: absolute;
-  left: 55%;
-  bottom: 15%;
-  width: 40%;
-  height: 17%;
+  left: 56%;
+  bottom: 31%;
+  width: 22vw;
+  height: 3vw;
   transform: skew(-12deg) translateX(-50%);
   background: rgba(238, 111, 87, 0.5);
   z-index: -1;
@@ -33,11 +40,14 @@
 }
 
 .whitediv {
-  background-color: white;
-  border: 2px solid white;
+  // background-color: white;
+  border: 2px solid #EB5C5E;
   border-radius: 20px;
   padding: 1%;
   margin-top: -3%;
+  background-image: url("papierpeint11.jpg") !important;
+  background-size: cover;
+
 
 }
 
