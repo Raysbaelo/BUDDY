@@ -7,13 +7,15 @@
   align-items: center;
   flex-direction: column-reverse;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   margin: 7%;
-  padding: 10px 13px;
-  border-radius: 25px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 10px 42px;
+  border-radius: 21px;
   background: linear-gradient(115deg, #ff9596 3%, #f47678 16%, #ef6668 27%, rgba(244, 65, 68, 0.961244) 46%, #ec6264 62%, #ef7d7f 74%, #ff8c8d 87%, #f7bbbc 96%, #ffbbbc 96%, #ffb9b9 98%);
   min-height: 33vh;
+  background-image: url('backgroundgrad.png');
+  background-size: cover;
+  background-position: center;
   min-width: -webkit-fill-available;
 }
 
@@ -46,6 +48,7 @@
   font-weight: bold;
   align-self: center;
   margin: 5%;
+
 }
 
 .score {
@@ -113,9 +116,11 @@
 // }
 
 .belleloutre {
-  margin-left: 8vw;
-
+  margin-left: 4vw;
+  width: 95%;
 }
+
+
 
 .titlebuddy {
   color: white;
@@ -142,6 +147,7 @@
     }
 
     &::-webkit-progress-value {
+
       background: rgb(35, 129, 243);
     }
   }
@@ -149,20 +155,23 @@
   &.category-bar {
     height: 8px;
 
+
+
+
     &::-webkit-progress-bar {
       background: rgb(255, 255, 255);
     }
 
     &::-webkit-progress-value {
-      background: rgb(122, 255, 95);
+      background: #83e572;
     }
   }
 }
 
 
 .blackhole {
-  width: 40%;
-  margin-left: 2vw;
+  width: 32%;
+  margin-left: 3vw;
 }
 
 .buddybody {
