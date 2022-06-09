@@ -1,31 +1,31 @@
 <%= render "shared/banner" %>
+<div class="containergeneral">
+  <div class="test">
+    <span class="typed-js" data-controller="typed-js"></span>
 
-<div class="test">
-  <span class="typed-js" data-controller="typed-js"></span>
+    <div class="progressivebar">
 
-  <div class="progressivebar">
-
-    <% current_user.score.each do |category, value| %>
-      <%= category %>:
-      <progress class="progress-bar category-bar" value="<%= value %>" max="100"></progress>
-    <% end %>
-    <br>
+      <% current_user.score.each do |category, value| %>
+        <%= category %>:
+        <progress class="progress-bar category-bar" value="<%= value %>" max="100"></progress>
+      <% end %>
+      <br>
+    </div>
   </div>
-</div>
 
-<div class="nakedloutre">
-  <% if @general_score < 5 %>
-    <%= image_tag 'NakedLoutreHi.gif' %>
-    <%= image_tag 'blackhole.png', class: 'blackhole' %>
-  <% else %>
-    <%= image_tag("SLkissgif.gif") %>
-    <%= image_tag'blackhole.png',class: 'blackhole' %>
-  <% end %>
-</div>
-<div class="progressive">
-  <p class="xp">XP</p>
-  <progress class="progress-bar xp-bar" value="<%= @general_score %>" max="18"></progress>
-
+  <div class="nakedloutre">
+    <% if @general_score < 5 %>
+      <%= image_tag 'NakedLoutreHi.gif' %>
+      <%= image_tag 'blackhole.png', class: 'blackhole' %>
+    <% else %>
+      <%= image_tag'SLkissgif.gif' %>
+      <%= image_tag'blackhole.png',class: 'blackhole' %>
+    <% end %>
+  </div>
+  <div class="progressive">
+    <p class="xp">XP</p>
+    <progress class="progress-bar xp-bar" value="<%= @general_score %>" max="18"></progress>
+  </div>
 </div>
 
 <%= render "tasks/navbar" %>

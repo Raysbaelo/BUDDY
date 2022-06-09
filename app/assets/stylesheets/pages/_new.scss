@@ -73,13 +73,14 @@
 }
 
 
-#pcategory{
-  margin-left: 30px;
+#pcategory {
+  margin-left: 6vh;
   font-size: 15px;
 }
 
-.form-control{
+.form-control {
   text-align: center;
+  border-radius: 6px;
 }
 
 .radiobtn {
@@ -88,10 +89,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  flex-direction: row;
-  height: 42vw;
-  width: 57vw;
-  text-align: left;
+  height: 43vw;
+  width: 61vw;
+  border-radius: 20px;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
 
 }
@@ -99,10 +99,10 @@
 .radiobtn img {
   padding: 4%;
   text-align: center;
-  border: 2px solid #EAEAEA;
-  border-radius: 25px;
+  border-radius: 16px;
   background-color: white;
   width: 15vw;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -148,36 +148,39 @@
 
 .pastequediv {
   background-color: #EB5C5E;
-  border: 2px solid #EB5C5E;
   border-radius: 20px;
   height: 101vw;
-  width: 72vw;
-  margin-left: 8vw;
+  width: 73vw;
+  margin-left: 13vw;
   padding: 5%;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
 }
 
 
-  .bg-white {
-    border-radius: 20px !important;
-    position: relative;
-    margin-right: -5%;
-    margin-left: -5%;
-    margin-top: -5%;
-    background-color:white !important;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
-  }
+.bg-white {
+  border-radius: 20px !important;
+  position: relative;
+  margin-right: -5%;
+  margin-left: -5%;
 
-  .SuperloutreFlying {
-    max-width: 50vh;
-    position: absolute;
-    right: 58vw;
-    bottom: 10vh;
-    width: 45vw;
-    &.active {
-      visibility: hidden;
-    }
+  margin-top: -4%;
+
+  background-color: white !important;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px !important;
+}
+
+.SuperloutreFlying {
+  max-width: 50vh;
+  position: absolute;
+  right: 58vw;
+  bottom: 10vh;
+  width: 45vw;
+
+  &.active {
+    visibility: hidden;
   }
+}
 
 
 .twobtn {
@@ -192,18 +195,20 @@
   background: #EB5C5E;
   border-radius: 15px;
   padding: 2% 7%;
-  border: 2px solid #EB5C5E;
+  letter-spacing: 0.5px;
+  border: 1px solid #ce5353;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
   margin-top: 5%;
+  color: white;
 }
 
 .creatbtn:active {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  background: white;
   border-radius: 20px;
   padding: 2% 7%;
-  border: 2px solid white;
   margin-top: 5%;
 
 }
