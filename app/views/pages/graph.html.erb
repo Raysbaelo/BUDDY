@@ -1,10 +1,17 @@
 <%= render "shared/banner" %>
 <div class="container-fluid">
 
-  <%# <div class="row-title"> %>
+
     <h1 class="h1graph">Trophées</h1>
-  <%# </div> %>
-      <%= image_tag("SLtopgif.gif", class:"demiloutrereward", size: "120") %>
+
+  <div class="loutregraph">
+        <% if @general_score < 5 %>
+          <%= image_tag 'Nakedottertopgif.gif', size: "120" %>
+        <% else %>
+          <%= image_tag "SLtopgif.gif", size: "120" %>
+        <% end %>
+  </div>
+
     <div class="colordiv">
       <div class="whitediv">
           <div class="lignesport">
