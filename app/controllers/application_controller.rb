@@ -2,10 +2,17 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :check_profile!, if: :current_user
   before_action :configure_permitted_parameters, if: :devise_controller?
+  before_action :set_general_score, if: :current_user
 
   def disable_nav
     @disable_nav = true
   end
+
+  def set_general_score
+     @general_score = current_user.tasks.done.count
+  end
+
+
 
 
 
