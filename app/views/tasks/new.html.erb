@@ -15,7 +15,7 @@
         <div class="bg-white rounded p-3 shadow">
           <%= simple_form_for @task, remote: true, html: { 'data-action': "ajax:success->validate#displayPopup" }  do |task| %>
           <div class="nameform">
-            <%= task.input :name, :label => 'Nom',:required => false, placeholder: 'Ajoute ta tache' %>
+            <%= task.input :name, :label => 'Nom',:required => false, placeholder: 'Ajoutes ta tâche' %>
           </div>
           <p id="pcategory">Choisis une categorie</p>
           <div class="radiobtn">
