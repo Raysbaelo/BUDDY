@@ -3,8 +3,8 @@
   width: 100vw;
   height: 60px;
   border-radius: 18px;
-  position: fixed;
-  bottom: 0px;
+  position: absolute;
+  bottom: 1vw;
   left: 0px;
   z-index: 3;
   background-color: white;
@@ -36,28 +36,38 @@ a {
   height: 41px;
   border-radius: 25%;
   background-color: #2A9D8F;
-  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
+  // box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+
   margin: 4px;
 }
 
 #home img {
   background-color: #EB5C5E;
-  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
+  // box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+
 }
 
 #plus img {
   background-color: #FF8954;
-  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
+  // box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+
 }
 
 #graph img {
   background-color: #F5C44D;
-  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
+  // box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+
 }
 
 #logout img {
   background-color: #A0E295;
-  box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
+  // box-shadow: rgba(0, 0, 0, 0.30) 3px 3px 8px !important;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 13px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+
 }
 
 /////// active styles /////
