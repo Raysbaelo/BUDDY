@@ -13,21 +13,6 @@
     </div>
   </div>
 
-  <div class="nakedloutre">
-    <% if @general_score < 5 %>
-      <%= image_tag 'NakedLoutreHi.gif' %>
-      <%= image_tag 'blackhole.png', class: 'blackhole' %>
-    <% else %>
-      <%= image_tag'SLkissgif.gif' %>
-      <%= image_tag'blackhole.png',class: 'blackhole' %>
-    <% end %>
-  </div>
-  <div class="progressive">
-    <p class="xp">XP</p>
-    <progress class="progress-bar xp-bar" value="<%= @general_score %>" max="18"></progress>
-  </div>
-</div>
-
 <div>
   <% if @general_score < 5 %>
     <%= image_tag 'nakedloutrelandinggif.gif', size: "160", class: "nakedloutre" %>
