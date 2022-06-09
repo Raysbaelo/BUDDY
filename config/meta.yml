@@ -1,5 +1,5 @@
 meta_product_name: "Buddy"
-meta_title: "Buddy - Le quotidien est easy !"
+meta_title: "Buddy - Le quotidien devient easy !"
 meta_description: "Remets toi sur les rails avec Buddy !"
-meta_image: "cover.png" # should exist in `app/assets/images/`
-twitter_account: "@product_twitter_account"   # required for Twitter Cards
+meta_image: "Buddywallpaper.png" # should exist in `app/assets/images/`
+twitter_account: "@Joupsie"   # required for Twitter Cards
